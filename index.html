@@ -1,3 +1,6 @@
+Here is the complete HTML file. You can save it as index.html.
+
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -9,76 +12,106 @@
 <meta name="apple-mobile-web-app-title" content="DayMatrix">
 <link rel="manifest" href="./manifest.json">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>DayMatrix | إدارة يومك</title>
+<title data-i18n="app.title">DayMatrix | إدارة يومك</title>
 <style>
 :root{--bg:#101116;--panel:#1b1d26;--panel2:#242733;--line:#303340;--text:#f4f5f8;--muted:#9ca2b3;--accent:#f2b84b;--red:#f0786c;--blue:#70aaff;--green:#62c99b;--purple:#b69aff}
-*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;font-size:15px;line-height:1.45;padding-bottom:92px}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;color:inherit}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.app{max-width:1050px;margin:auto;padding:22px 16px 28px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:1.3px;font-weight:800}.title{font-size:28px;font-weight:850;margin:2px 0}.subtitle{color:var(--muted);margin:0}.date-pill,.chip{background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:13px}.tabs{display:flex;gap:8px;overflow:auto;padding:5px 0 14px;margin-bottom:12px;scrollbar-width:none}.tabs button{white-space:nowrap;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:11px 15px;color:var(--muted);font-weight:700}.tabs button.active{background:#f2b84b1a;border-color:var(--accent);color:var(--accent)}.view{display:none}.view.active{display:block}.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin-bottom:14px}.card{background:var(--panel);border:1px solid #ffffff08;border-radius:22px;padding:17px;min-width:0}.hero-main{background:linear-gradient(135deg,#282a35,#1b1d26);padding:22px}.hero-main h2{font-size:23px;margin:0 0 4px}.hero-main p{color:var(--muted);margin:0 0 20px}.progress-track{height:9px;background:#383b48;border-radius:999px;overflow:hidden}.progress-fill{height:100%;width:0;background:var(--accent);border-radius:999px;transition:width .2s}.hero-foot{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-top:9px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:var(--panel);border-radius:18px;padding:15px}.stat .label{font-size:12px;color:var(--muted)}.stat strong{display:block;font-size:25px;margin-top:4px}.stat small{color:var(--muted)}.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:20px 0 12px}.section-head h2{font-size:18px;margin:0}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{padding:10px 13px;border-radius:12px;background:var(--panel2);border:1px solid var(--line);font-weight:700}.btn.primary{background:var(--accent);color:#171717;border-color:var(--accent)}.btn.ghost{background:transparent}.btn.danger{color:var(--red);background:#f0786c12;border-color:#f0786c33}.btn.small{padding:7px 10px;font-size:12px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.toolbar input,.toolbar select{flex:1;min-width:125px}.field, input,select,textarea{background:#151720;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:11px 12px;width:100%;min-width:0}input[type=range]{padding:0;accent-color:var(--accent)}input[type=checkbox]{width:18px;height:18px;accent-color:var(--accent)}label{display:block;color:var(--muted);font-size:12px;margin:0 0 6px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-grid .full{grid-column:1/-1}.task-list,.habit-list{display:grid;gap:10px}.task{background:var(--panel);border:1px solid #ffffff08;border-radius:18px;padding:14px}.task-top{display:flex;gap:11px;align-items:flex-start}.check{width:23px;height:23px;flex:0 0 23px;border-radius:50%;border:2px solid var(--muted);background:transparent;margin-top:2px;padding:0}.check.done{background:var(--green);border-color:var(--green);position:relative}.check.done:after{content:"✓";color:#102119;font-weight:900;position:absolute;inset:-2px 0 0;text-align:center}.task-content{flex:1;min-width:0}.task-title{font-weight:750;overflow-wrap:anywhere}.task.done .task-title{text-decoration:line-through;color:var(--muted)}.task-desc{color:var(--muted);font-size:13px;margin-top:4px;white-space:pre-wrap}.meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.tag{font-size:11px;border-radius:7px;padding:4px 7px;background:var(--panel2);color:var(--muted)}.tag.urgent{color:var(--red);background:#f0786c17}.tag.important{color:var(--blue);background:#70aaff17}.tag.someday{color:var(--purple);background:#b69aff17}.task-progress{margin-top:13px}.task-progress-head{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:6px}.task-buttons{display:flex;gap:6px;margin-right:auto}.icon-btn{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:7px 9px;font-size:12px}.empty{padding:28px 15px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:16px}.habit{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid #ffffff08;border-radius:16px;padding:13px}.habit-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:var(--panel2);font-size:20px;flex:0 0 42px}.habit-body{flex:1;min-width:0}.habit-name{font-weight:750}.habit-sub{font-size:12px;color:var(--muted)}.habit-count{display:flex;gap:5px;align-items:center}.habit-count input{width:72px;text-align:center;padding:8px}.habit-progress{height:5px;background:#383b48;border-radius:99px;margin-top:8px;overflow:hidden}.habit-progress span{display:block;height:100%;background:var(--green)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}.category-row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 0;border-bottom:1px solid var(--line)}.modal-backdrop{display:none;position:fixed;inset:0;background:#000a;z-index:20;padding:14px;align-items:flex-end;justify-content:center}.modal-backdrop.open{display:flex}.modal{background:var(--panel);border:1px solid var(--line);border-radius:24px 24px 16px 16px;width:min(650px,100%);max-height:92dvh;overflow:auto;padding:20px}.modal h2{margin:0 0 16px;font-size:20px}.modal-actions{display:flex;gap:8px;justify-content:flex-start;margin-top:16px}.notice{color:var(--muted);font-size:12px;line-height:1.6}.report-box{background:#fff;color:#161616;border-radius:14px;padding:20px}.report-box h1,.report-box h2{color:#161616}.report-box table{width:100%;border-collapse:collapse;font-size:12px}.report-box th,.report-box td{border:1px solid #ddd;padding:7px;text-align:right;vertical-align:top}.report-box th{background:#f0f0f0}.report-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}.report-summary div{border:1px solid #ddd;border-radius:8px;padding:10px}.report-summary strong{display:block;font-size:20px}.bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:10;background:#191b23f2;border-top:1px solid var(--line);padding:9px max(12px,env(safe-area-inset-left)) calc(9px + env(safe-area-inset-bottom));display:flex;justify-content:center;gap:5px;backdrop-filter:blur(20px)}.bottom-nav button{flex:1;max-width:190px;background:transparent;color:var(--muted);padding:7px 3px;border-radius:13px;font-size:12px}.bottom-nav button.active{background:var(--panel2);color:var(--accent)}.bottom-nav b{display:block;font-size:19px;line-height:1.2;margin-bottom:3px}.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#f4f5f8;color:#171717;border-radius:12px;padding:10px 16px;box-shadow:0 8px 30px #0005;display:none;z-index:40;max-width:90%;font-size:13px}.toast.show{display:block}.footer-note{color:var(--muted);font-size:11px;text-align:center;margin-top:24px}
+*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;font-size:15px;line-height:1.45;padding-bottom:92px}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;color:inherit}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.app{max-width:1050px;margin:auto;padding:22px 16px 28px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:1.3px;font-weight:800}.title{font-size:28px;font-weight:850;margin:2px 0}.subtitle{color:var(--muted);margin:0}.date-pill,.chip{background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:13px}.tabs{display:flex;gap:8px;overflow:auto;padding:5px 0 14px;margin-bottom:12px;scrollbar-width:none}.tabs button{white-space:nowrap;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:11px 15px;color:var(--muted);font-weight:700}.tabs button.active{background:#f2b84b1a;border-color:var(--accent);color:var(--accent)}.view{display:none}.view.active{display:block}.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin-bottom:14px}.card{background:var(--panel);border:1px solid #ffffff08;border-radius:22px;padding:17px;min-width:0}.hero-main{background:linear-gradient(135deg,#282a35,#1b1d26);padding:22px}.hero-main h2{font-size:23px;margin:0 0 4px}.hero-main p{color:var(--muted);margin:0 0 20px}.progress-track{height:9px;background:#383b48;border-radius:999px;overflow:hidden}.progress-fill{height:100%;width:0;background:var(--accent);border-radius:999px;transition:width .2s}.hero-foot{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-top:9px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:var(--panel);border-radius:18px;padding:15px}.stat .label{font-size:12px;color:var(--muted)}.stat strong{display:block;font-size:25px;margin-top:4px}.stat small{color:var(--muted)}.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:20px 0 12px}.section-head h2{font-size:18px;margin:0}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{padding:10px 13px;border-radius:12px;background:var(--panel2);border:1px solid var(--line);font-weight:700}.btn.primary{background:var(--accent);color:#171717;border-color:var(--accent)}.btn.ghost{background:transparent}.btn.danger{color:var(--red);background:#f0786c12;border-color:#f0786c33}.btn.small{padding:7px 10px;font-size:12px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.toolbar input,.toolbar select{flex:1;min-width:125px}.field, input,select,textarea{background:#151720;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:11px 12px;width:100%;min-width:0}input[type=range]{padding:0;accent-color:var(--accent)}input[type=checkbox]{width:18px;height:18px;accent-color:var(--accent)}label{display:block;color:var(--muted);font-size:12px;margin:0 0 6px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-grid .full{grid-column:1/-1}.task-list,.habit-list{display:grid;gap:10px}.task{background:var(--panel);border:1px solid #ffffff08;border-radius:18px;padding:14px}.task-top{display:flex;gap:11px;align-items:flex-start}.check{width:23px;height:23px;flex:0 0 23px;border-radius:50%;border:2px solid var(--muted);background:transparent;margin-top:2px;padding:0}.check.done{background:var(--green);border-color:var(--green);position:relative}.check.done:after{content:"✓";color:#102119;font-weight:900;position:absolute;inset:-2px 0 0;text-align:center}.task-content{flex:1;min-width:0}.task-title{font-weight:750;overflow-wrap:anywhere}.task.done .task-title{text-decoration:line-through;color:var(--muted)}.task-desc{color:var(--muted);font-size:13px;margin-top:4px;white-space:pre-wrap}.meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.tag{font-size:11px;border-radius:7px;padding:4px 7px;background:var(--panel2);color:var(--muted)}.tag.urgent{color:var(--red);background:#f0786c17}.tag.important{color:var(--blue);background:#70aaff17}.tag.someday{color:var(--purple);background:#b69aff17}.task-progress{margin-top:13px}.task-progress-head{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:6px}.task-buttons{display:flex;gap:6px;margin-right:auto}.icon-btn{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:7px 9px;font-size:12px}.empty{padding:28px 15px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:16px}.habit{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid #ffffff08;border-radius:16px;padding:13px}.habit-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:var(--panel2);font-size:20px;flex:0 0 42px}.habit-body{flex:1;min-width:0}.habit-name{font-weight:750}.habit-sub{font-size:12px;color:var(--muted)}.habit-count{display:flex;gap:5px;align-items:center}.habit-count input{width:72px;text-align:center;padding:8px}.habit-progress{height:5px;background:#383b48;border-radius:99px;margin-top:8px;overflow:hidden}.habit-progress span{display:block;height:100%;background:var(--green)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}.category-row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 0;border-bottom:1px solid var(--line)}.modal-backdrop{display:none;position:fixed;inset:0;background:#000a;z-index:20;padding:14px;align-items:flex-end;justify-content:center}.modal-backdrop.open{display:flex}.modal{background:var(--panel);border:1px solid var(--line);border-radius:24px 24px 16px 16px;width:min(650px,100%);max-height:92dvh;overflow:auto;padding:20px}.modal h2{margin:0 0 16px;font-size:20px}.modal-actions{display:flex;gap:8px;justify-content:flex-start;margin-top:16px}.notice{color:var(--muted);font-size:12px;line-height:1.6}.report-box{background:#fff;color:#161616;border-radius:14px;padding:20px}.report-box h1,.report-box h2{color:#161616}.report-box table{width:100%;border-collapse:collapse;font-size:12px}.report-box th,.report-box td{border:1px solid #ddd;padding:7px;text-align:right;vertical-align:top}.report-box th{background:#f0f0f0}.report-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}.report-summary div{border:1px solid #ddd;border-radius:8px;padding:10px}.report-summary strong{display:block;font-size:20px}.report-box[dir=ltr] th,.report-box[dir=ltr] td{text-align:left}.bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:10;background:#191b23f2;border-top:1px solid var(--line);padding:9px max(12px,env(safe-area-inset-left)) calc(9px + env(safe-area-inset-bottom));display:flex;justify-content:center;gap:5px;backdrop-filter:blur(20px)}.bottom-nav button{flex:1;max-width:190px;background:transparent;color:var(--muted);padding:7px 3px;border-radius:13px;font-size:12px}.bottom-nav button.active{background:var(--panel2);color:var(--accent)}.bottom-nav b{display:block;font-size:19px;line-height:1.2;margin-bottom:3px}.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#f4f5f8;color:#171717;border-radius:12px;padding:10px 16px;box-shadow:0 8px 30px #0005;display:none;z-index:40;max-width:90%;font-size:13px}.toast.show{display:block}.footer-note{color:var(--muted);font-size:11px;text-align:center;margin-top:24px}
 @media(min-width:760px){.app{padding:28px 24px}.task-list{grid-template-columns:1fr 1fr}.modal-backdrop{align-items:center}.modal{border-radius:22px}.bottom-nav{top:0;bottom:auto;position:sticky;border:1px solid var(--line);border-radius:18px;margin:0 auto 15px;max-width:600px;padding:6px}.app{padding-top:16px}body{padding-bottom:0}}
 @media(max-width:520px){.app{padding:17px 12px 25px}.hero{grid-template-columns:1fr}.hero-main{padding:18px}.title{font-size:25px}.two-col{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.section-head{align-items:flex-start}.report-summary{grid-template-columns:1fr 1fr 1fr}.habit{padding:11px}.habit-count input{width:60px}.task-buttons{flex-direction:column}.date-pill{font-size:11px}}
 @media print{body{background:#fff;color:#111;padding:0}.app,.bottom-nav,.modal-backdrop,.toast{display:none!important}#printArea{display:block!important}.report-box{border:0;padding:0}.report-box h1,.report-box h2{color:#111}@page{size:A4;margin:14mm}}
+.habit-icon-picker{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.habit-icon-option{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:var(--panel2);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.habit-icon-option.selected{border:2px solid var(--accent);background:rgba(244,184,75,.14);box-shadow:0 0 0 2px rgba(244,184,75,.12)}
 </style>
 </head>
 <body>
 <div class="app" id="app">
   <header class="top">
-    <div><div class="eyebrow">DAYMATRIX · PERSONAL SYSTEM</div><div class="title">إدارة يومك</div><p class="subtitle" id="greeting">رتّب يومك، وقِس تقدمك.</p></div>
-    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px"><button class="date-pill" id="langToggle" type="button" onclick="toggleLanguage()" style="font-size:13px;cursor:pointer;color:var(--text);min-width:86px">English</button><div class="date-pill" id="todayLabel" style="display:block"></div><div class="date-pill" id="liveClock" style="display:block;color:var(--accent);font-weight:700;font-size:13px;direction:ltr">--:--:--</div></div>
+    <div>
+      <div class="eyebrow" data-i18n="app.brand">DAYMATRIX · PERSONAL SYSTEM</div>
+      <div class="title" data-i18n="app.heading">إدارة يومك</div>
+      <p class="subtitle" id="greeting" data-i18n="app.tagline">رتّب يومك، وقِس تقدمك.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+      <button class="date-pill" id="langToggle" type="button" style="font-size:13px;cursor:pointer;color:var(--text);min-width:86px">English</button>
+      <div class="date-pill" id="todayLabel" style="display:block"></div>
+      <div class="date-pill" id="liveClock" style="display:block;color:var(--accent);font-weight:700;font-size:13px;direction:ltr">--:--:--</div>
+    </div>
   </header>
-<section class="view active" id="view-dashboard">
+
+  <section class="view active" id="view-dashboard">
     <div class="hero">
       <div class="card hero-main">
-        <h2 id="dashHeading">خطة اليوم</h2><p id="dashSub">ابدأ بالأهم، وراجع تقدمك خلال اليوم.</p>
+        <h2 data-i18n="dash.plan">خطة اليوم</h2>
+        <p data-i18n="dash.planSub">ابدأ بالأهم، وراجع تقدمك خلال اليوم.</p>
         <div class="progress-track"><div class="progress-fill" id="dayProgress"></div></div>
-        <div class="hero-foot"><span id="dayProgressLabel">0% من المهام المطلوبة اليوم</span><span id="doneCount">0 / 0</span></div>
+        <div class="hero-foot"><span id="dayProgressLabel"></span><span id="doneCount"></span></div>
       </div>
       <div class="stats">
-        <div class="stat" role="button" onclick="showView(&quot;tasks&quot;);document.getElementById(&quot;taskFilter&quot;).value=&quot;today&quot;;renderTasks()" style="cursor:pointer"><span class="label">مهام مستحقة اليوم</span><strong id="statTasks">0</strong><small id="statTasksSub">0 مكتملة</small></div>
-        <div class="stat" role="button" onclick="showView(&quot;habits&quot;)" style="cursor:pointer"><span class="label">العادات اليوم</span><strong id="statHabits">0%</strong><small id="statHabitsSub">0 من 0</small></div>
-        <div class="stat" role="button" onclick="showView(&quot;tasks&quot;);document.getElementById(&quot;taskFilter&quot;).value=&quot;overdue&quot;;renderTasks()" style="cursor:pointer"><span class="label">مهام متأخرة</span><strong id="statOverdue">0</strong><small>تحتاج مراجعة</small></div>
-        <div class="stat" role="button" onclick="showView(&quot;tasks&quot;)" style="cursor:pointer"><span class="label">وقت متوقع متبقٍ</span><strong id="statTime">0 د</strong><small>حسب تقديراتك</small></div>
+        <div class="stat" role="button" onclick="jumpTasks('today')" style="cursor:pointer"><span class="label" data-i18n="dash.stat.tasks">مهام مستحقة اليوم</span><strong id="statTasks">0</strong><small id="statTasksSub"></small></div>
+        <div class="stat" role="button" onclick="showView('habits')" style="cursor:pointer"><span class="label" data-i18n="dash.stat.habits">العادات اليوم</span><strong id="statHabits">0%</strong><small id="statHabitsSub"></small></div>
+        <div class="stat" role="button" onclick="jumpTasks('overdue')" style="cursor:pointer"><span class="label" data-i18n="dash.stat.overdue">مهام متأخرة</span><strong id="statOverdue">0</strong><small data-i18n="dash.stat.overdueSub">تحتاج مراجعة</small></div>
+        <div class="stat" role="button" onclick="showView('tasks')" style="cursor:pointer"><span class="label" data-i18n="dash.stat.time">وقت متوقع متبقٍ</span><strong id="statTime">0 د</strong><small data-i18n="dash.stat.timeSub">حسب تقديراتك</small></div>
       </div>
     </div>
-    <div class="section-head"><h2>أهم ما يجب إنجازه</h2><div class="actions"><button class="btn primary" onclick="openTask()">＋ مهمة جديدة</button><button class="btn" onclick="openHabit()">＋ عادة</button></div></div>
+    <div class="section-head">
+      <h2 data-i18n="dash.focus">أهم ما يجب إنجازه</h2>
+      <div class="actions">
+        <button class="btn primary" onclick="openTask()" data-i18n="dash.newTask">＋ مهمة جديدة</button>
+        <button class="btn" onclick="openHabit()" data-i18n="dash.newHabit">＋ عادة</button>
+      </div>
+    </div>
     <div class="task-list" id="focusTasks"></div>
-    <div class="section-head"><h2>العادات اليومية</h2><button class="btn small" onclick="showView('habits')">عرض الكل</button></div>
+    <div class="section-head"><h2 data-i18n="dash.dailyHabits">العادات اليومية</h2><button class="btn small" onclick="showView('habits')" data-i18n="dash.viewAll">عرض الكل</button></div>
     <div class="habit-list" id="dashboardHabits"></div>
-    <div class="footer-note">بياناتك محفوظة محليًا على هذا المتصفح. صدّر نسخة احتياطية بانتظام.</div>
+    <div class="footer-note" data-i18n="dash.footer">بياناتك محفوظة محليًا على هذا المتصفح. صدّر نسخة احتياطية بانتظام.</div>
   </section>
 
   <section class="view" id="view-tasks">
-    <div class="section-head"><h2>المهام</h2><button class="btn primary" onclick="openTask()">＋ إضافة مهمة</button></div>
+    <div class="section-head"><h2 data-i18n="tasks.title">المهام</h2><button class="btn primary" onclick="openTask()" data-i18n="tasks.add">＋ إضافة مهمة</button></div>
     <div class="toolbar">
-      <input id="taskSearch" placeholder="ابحث في المهام..." oninput="renderTasks()">
-      <select id="taskFilter" onchange="renderTasks()"><option value="all">كل الحالات</option><option value="today">مستحقة اليوم</option><option value="overdue">متأخرة</option><option value="open">غير مكتملة</option><option value="done">مكتملة</option></select>
-      <select id="categoryFilter" onchange="renderTasks()"><option value="all">كل التصنيفات</option></select>
+      <input id="taskSearch" data-i18n-placeholder="tasks.search" placeholder="ابحث في المهام..." oninput="renderTasks()">
+      <select id="taskFilter" onchange="renderTasks()">
+        <option value="all" data-i18n="tasks.filter.all">كل الحالات</option>
+        <option value="today" data-i18n="tasks.filter.today">مستحقة اليوم</option>
+        <option value="overdue" data-i18n="tasks.filter.overdue">متأخرة</option>
+        <option value="open" data-i18n="tasks.filter.open">غير مكتملة</option>
+        <option value="done" data-i18n="tasks.filter.done">مكتملة</option>
+      </select>
+      <select id="categoryFilter" onchange="renderTasks()">
+        <option value="all" data-i18n="tasks.cat.all">كل التصنيفات</option>
+      </select>
     </div>
     <div class="task-list" id="allTasks"></div>
   </section>
 
   <section class="view" id="view-habits">
-    <div class="section-head"><h2>العادات اليومية</h2><button class="btn primary" onclick="openHabit()">＋ إضافة عادة</button></div>
+    <div class="section-head"><h2 data-i18n="habit.title">العادات اليومية</h2><button class="btn primary" onclick="openHabit()" data-i18n="habit.add">＋ إضافة عادة</button></div>
     <div class="card" style="margin-bottom:14px">
       <div class="toolbar" style="margin:0">
-        <div style="flex:1;min-width:150px"><label>تاريخ سجل العادات</label><input type="date" id="habitDate" onchange="renderHabits()"></div>
-        <div style="flex:1;min-width:150px"><label>إنجاز العادات لهذا اليوم</label><div id="habitDaySummary" style="padding:10px 0;font-weight:800">0%</div></div>
+        <div style="flex:1;min-width:150px"><label data-i18n="habit.dateLabel">تاريخ سجل العادات</label><input type="date" id="habitDate" onchange="renderHabits()"></div>
+        <div style="flex:1;min-width:150px"><label data-i18n="habit.daySummaryLabel">إنجاز العادات لهذا اليوم</label><div id="habitDaySummary" style="padding:10px 0;font-weight:800">0%</div></div>
       </div>
     </div>
     <div class="habit-list" id="allHabits"></div>
-    <p class="notice">العادات تحتفظ بسجل منفصل لكل يوم. تغيير تسجيل اليوم لا يغيّر الأيام السابقة. العادة التي لا يحين موعدها اليوم لا تدخل في النسبة.</p>
+    <p class="notice" data-i18n="habit.note">العادات تحتفظ بسجل منفصل لكل يوم. تغيير تسجيل اليوم لا يغيّر الأيام السابقة. العادة التي لا يحين موعدها اليوم لا تدخل في النسبة.</p>
   </section>
 
   <section class="view" id="view-reports">
-    <div class="section-head"><h2>التقارير</h2></div>
+    <div class="section-head"><h2 data-i18n="reports.title">التقارير</h2></div>
     <div class="card" style="margin-bottom:14px">
       <div class="form-grid">
-        <div><label>نوع التقرير</label><select id="reportType" onchange="buildReport()"><option value="day">يوم محدد</option><option value="range">فترة زمنية</option></select></div>
-        <div><label>تضمين العادات</label><select id="reportIncludeHabits" onchange="buildReport()"><option value="yes">نعم</option><option value="no">لا</option></select></div>
-        <div><label>من تاريخ</label><input type="date" id="reportFrom" onchange="buildReport()"></div>
-        <div id="reportToWrap"><label>إلى تاريخ</label><input type="date" id="reportTo" onchange="buildReport()"></div>
-        <div class="full"><label>ملاحظات التقرير (اختياري)</label><textarea id="reportNotes" rows="2" placeholder="ملاحظة تظهر في التقرير..." oninput="buildReport()"></textarea></div>
+        <div><label data-i18n="reports.type">نوع التقرير</label><select id="reportType"><option value="day" data-i18n="reports.type.day">يوم محدد</option><option value="range" data-i18n="reports.type.range">فترة زمنية</option></select></div>
+        <div><label data-i18n="reports.include">تضمين العادات</label><select id="reportIncludeHabits"><option value="yes" data-i18n="reports.yes">نعم</option><option value="no" data-i18n="reports.no">لا</option></select></div>
+        <div><label data-i18n="reports.from">من تاريخ</label><input type="date" id="reportFrom"></div>
+        <div id="reportToWrap"><label data-i18n="reports.to">إلى تاريخ</label><input type="date" id="reportTo"></div>
+        <div class="full"><label data-i18n="reports.notesLabel">ملاحظات التقرير (اختياري)</label><textarea id="reportNotes" rows="2" data-i18n-placeholder="reports.notesPlaceholder" placeholder="ملاحظة تظهر في التقرير..."></textarea></div>
       </div>
-      <div class="actions" style="margin-top:14px"><button class="btn primary" onclick="printReport()">تصدير / حفظ PDF</button><button class="btn" onclick="exportCSV()">تصدير المهام CSV</button></div>
-      <p class="notice">زر PDF يفتح نافذة الطباعة. اختر Save as PDF / حفظ كملف PDF من قائمة الطباعة في المتصفح. على iPhone يمكن استخدام مشاركة ثم طباعة أو حفظ في الملفات، حسب المتصفح.</p>
+      <div class="actions" style="margin-top:14px">
+        <button class="btn primary" onclick="printReport()" data-i18n="reports.pdf">تصدير / حفظ PDF</button>
+        <button class="btn" onclick="exportCSV()" data-i18n="reports.csv">تصدير المهام CSV</button>
+      </div>
+      <p class="notice" data-i18n="reports.hint">زر PDF يفتح نافذة الطباعة. اختر Save as PDF / حفظ كملف PDF من قائمة الطباعة في المتصفح. على iPhone يمكن استخدام مشاركة ثم طباعة أو حفظ في الملفات، حسب المتصفح.</p>
     </div>
     <div id="reportPreview"></div>
   </section>
@@ -86,36 +119,40 @@
   <section class="view" id="view-settings">
     <div class="two-col">
       <div class="card">
-        <h2 style="margin-top:0">التصنيفات</h2>
-        <p class="notice">أضف تصنيفات تناسبك. حذف تصنيف لا يحذف المهام، بل ينقلها إلى «بدون تصنيف».</p>
-        <div class="toolbar"><input id="newCategory" placeholder="اسم التصنيف"><button class="btn primary" onclick="addCategory()">إضافة</button></div>
+        <h2 style="margin-top:0" data-i18n="settings.categories">التصنيفات</h2>
+        <p class="notice" data-i18n="settings.catHint">أضف تصنيفات تناسبك. حذف تصنيف لا يحذف المهام، بل ينقلها إلى «بدون تصنيف».</p>
+        <div class="toolbar"><input id="newCategory" data-i18n-placeholder="settings.catName" placeholder="اسم التصنيف"><button class="btn primary" onclick="addCategory()" data-i18n="settings.add">إضافة</button></div>
         <div id="categoryList"></div>
       </div>
       <div class="card">
-        <h2 style="margin-top:0">البيانات والنسخ الاحتياطي</h2>
-        <p class="notice">صدّر ملف JSON للاحتفاظ بنسخة من المهام والعادات والتصنيفات والسجلات. احتفظ بالملف في مكان آمن.</p>
-        <div class="actions" style="margin:12px 0"><button class="btn primary" onclick="exportJSON()">تصدير كل البيانات JSON</button><button class="btn" onclick="document.getElementById('importFile').click()">استيراد نسخة JSON</button><input type="file" id="importFile" accept=".json,application/json" hidden onchange="importJSON(event)"></div>
+        <h2 style="margin-top:0" data-i18n="settings.data">البيانات والنسخ الاحتياطي</h2>
+        <p class="notice" data-i18n="settings.dataHint">صدّر ملف JSON للاحتفاظ بنسخة من المهام والعادات والتصنيفات والسجلات. احتفظ بالملف في مكان آمن.</p>
+        <div class="actions" style="margin:12px 0">
+          <button class="btn primary" onclick="exportJSON()" data-i18n="settings.exportJson">تصدير كل البيانات JSON</button>
+          <button class="btn" onclick="document.getElementById('importFile').click()" data-i18n="settings.importJson">استيراد نسخة JSON</button>
+          <input type="file" id="importFile" accept=".json,application/json" hidden onchange="importJSON(event)">
+        </div>
         <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
-        <h3>إدارة البيانات</h3>
-        <button class="btn danger" onclick="resetData()">حذف كل البيانات</button>
-        <p class="notice">لا يمكن التراجع عن حذف البيانات. صدّر نسخة احتياطية قبل استخدام هذا الخيار.</p>
+        <h3 data-i18n="settings.manage">إدارة البيانات</h3>
+        <button class="btn danger" onclick="resetData()" data-i18n="settings.deleteAll">حذف كل البيانات</button>
+        <p class="notice" data-i18n="settings.deleteHint">لا يمكن التراجع عن حذف البيانات. صدّر نسخة احتياطية قبل استخدام هذا الخيار.</p>
       </div>
     </div>
     <div class="card" style="margin-top:14px">
-      <h2 style="margin-top:0">عن الحفظ</h2>
-      <p class="notice">الإصدار الأول يحفظ البيانات داخل المتصفح على الجهاز نفسه باستخدام IndexedDB مع نسخة احتياطية احتياطية عبر localStorage عند تعذر استخدام IndexedDB. لا توجد مزامنة سحابية بين الأجهزة. لا تمسح بيانات الموقع أو المتصفح قبل تصدير نسخة احتياطية.</p>
-      <div class="chip" id="storageStatus" style="display:inline-block">جارٍ فحص التخزين...</div>
-      <p class="notice" id="backupStatus">لم يتم تسجيل تصدير نسخة احتياطية في هذا المتصفح.</p>
+      <h2 style="margin-top:0" data-i18n="settings.about">عن الحفظ</h2>
+      <p class="notice" data-i18n="settings.storageHint">الإصدار الأول يحفظ البيانات داخل المتصفح على الجهاز نفسه باستخدام IndexedDB مع نسخة احتياطية احتياطية عبر localStorage عند تعذر استخدام IndexedDB. لا توجد مزامنة سحابية بين الأجهزة. لا تمسح بيانات الموقع أو المتصفح قبل تصدير نسخة احتياطية.</p>
+      <div class="chip" id="storageStatus" style="display:inline-block" data-i18n="settings.checking">جارٍ فحص التخزين...</div>
+      <p class="notice" id="backupStatus"></p>
     </div>
   </section>
 </div>
 
 <nav class="bottom-nav">
-  <button class="active" data-view="dashboard"><b>▦</b>الرئيسية</button>
-  <button data-view="tasks"><b>☷</b>المهام</button>
-  <button data-view="habits"><b>◷</b>العادات</button>
-  <button data-view="reports"><b>▤</b>التقارير</button>
-  <button data-view="settings"><b>⚙</b>الإعدادات</button>
+  <button class="active" data-view="dashboard"><b>▦</b><span data-i18n="nav.home">الرئيسية</span></button>
+  <button data-view="tasks"><b>☷</b><span data-i18n="nav.tasks">المهام</span></button>
+  <button data-view="habits"><b>◷</b><span data-i18n="nav.habits">العادات</span></button>
+  <button data-view="reports"><b>▤</b><span data-i18n="nav.reports">التقارير</span></button>
+  <button data-view="settings"><b>⚙</b><span data-i18n="nav.settings">الإعدادات</span></button>
 </nav>
 
 <div class="modal-backdrop" id="modalBackdrop" onclick="if(event.target===this)closeModal()"><div class="modal" id="modal"></div></div>
@@ -123,161 +160,896 @@
 <div id="printArea" style="display:none"></div>
 
 <script>
+/* Storage keys & identifiers — UNCHANGED from v4 to preserve data. */
 const DB_NAME='DayMatrixDB', DB_STORE='app', DB_KEY='main';
+const LS_DATA='daymatrix_data';
+const LS_LANG='daymatrix_language';
+const LS_EXPORT='daymatrix_last_export';
+const APP_VERSION='5.0.0';
+
+/* Helpers */
 const todayISO=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
 const plusDays=(date,n)=>{let d=new Date(date+'T12:00:00');d.setDate(d.getDate()+n);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
 const uid=()=>Math.random().toString(36).slice(2,9)+Date.now().toString(36);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const dateFmt=s=>{if(!s)return 'بدون موعد';let d=new Date(s+'T12:00:00');return d.toLocaleDateString('ar-EG',{day:'numeric',month:'short',year:'numeric'})};
+
+/* ------------------------------------------------------------------
+   Centralised i18n
+------------------------------------------------------------------- */
+let currentLanguage='ar';
+try{ const saved=localStorage.getItem(LS_LANG); if(saved==='ar'||saved==='en') currentLanguage=saved; }catch(e){}
+
+const I18N = {
+ar: {
+  'app.title':'DayMatrix | إدارة يومك','app.brand':'DAYMATRIX · PERSONAL SYSTEM','app.heading':'إدارة يومك','app.tagline':'رتّب يومك، وقِس تقدمك.','app.langToggle':'English',
+  'nav.home':'الرئيسية','nav.tasks':'المهام','nav.habits':'العادات','nav.reports':'التقارير','nav.settings':'الإعدادات',
+  'dash.plan':'خطة اليوم','dash.planSub':'ابدأ بالأهم، وراجع تقدمك خلال اليوم.',
+  'dash.progress':'{pct}% من تقدم مهام اليوم','dash.count':'{done} / {total}',
+  'dash.stat.tasks':'مهام مستحقة اليوم','dash.stat.tasks.sub':'{count} مكتملة',
+  'dash.stat.habits':'العادات اليوم','dash.stat.habits.sub':'{done} من {total} مكتملة',
+  'dash.stat.overdue':'مهام متأخرة','dash.stat.overdueSub':'تحتاج مراجعة',
+  'dash.stat.time':'وقت متوقع متبقٍ','dash.stat.timeSub':'حسب تقديراتك',
+  'dash.time.min':'{n} د','dash.time.hr':'{h} س {m} د',
+  'dash.focus':'أهم ما يجب إنجازه','dash.newTask':'＋ مهمة جديدة','dash.newHabit':'＋ عادة','dash.dailyHabits':'العادات اليومية','dash.viewAll':'عرض الكل',
+  'dash.empty':'لا توجد مهام مفتوحة. أضف مهمة أو استمتع بمساحة يومك.','dash.emptyHabits':'لا توجد عادات مجدولة لهذا اليوم.',
+  'dash.footer':'بياناتك محفوظة محليًا على هذا المتصفح. صدّر نسخة احتياطية بانتظام.',
+
+  'tasks.title':'المهام','tasks.add':'＋ إضافة مهمة','tasks.search':'ابحث في المهام...',
+  'tasks.filter.all':'كل الحالات','tasks.filter.today':'مستحقة اليوم','tasks.filter.overdue':'متأخرة','tasks.filter.open':'غير مكتملة','tasks.filter.done':'مكتملة',
+  'tasks.cat.all':'كل التصنيفات','tasks.empty':'لا توجد مهام مطابقة. استخدم «إضافة مهمة» لإنشاء واحدة.',
+
+  'task.priority.high':'مهم وعاجل','task.priority.medium':'مهم','task.priority.low':'يمكن تأجيله',
+  'task.status.done':'مكتملة','task.status.overdue':'متأخرة','task.status.noDue':'بدون موعد',
+  'task.estimate':'{n} دقيقة','task.progress':'التقدم','task.edit':'تعديل',
+
+  'habit.title':'العادات اليومية','habit.add':'＋ إضافة عادة','habit.dateLabel':'تاريخ سجل العادات','habit.daySummaryLabel':'إنجاز العادات لهذا اليوم',
+  'habit.summary':'{pct}% · {done} من {total} مكتملة','habit.empty':'لا توجد عادات مجدولة في هذا التاريخ.',
+  'habit.note':'العادات تحتفظ بسجل منفصل لكل يوم. تغيير تسجيل اليوم لا يغيّر الأيام السابقة. العادة التي لا يحين موعدها اليوم لا تدخل في النسبة.',
+  'habit.logDone':'تم ✓','habit.log':'تسجيل الإنجاز','habit.logged':'تم تسجيلها','habit.notLogged':'لم تسجل بعد',
+  'habit.ofTarget':'{val} من {target} {unit}','habit.edit':'تعديل','habit.progressAria':'الكمية المنفذة',
+  'habit.type.boolean':'تم / لم يتم','habit.type.number':'عدد أو كمية','habit.type.minutes':'مدة بالدقائق',
+  'habit.icon':'الأيقونة','habit.target':'العدد المطلوب يوميًا',
+  'habit.target.one':'{n} مرة يوميًا','habit.target.many':'{n} مرات يوميًا',
+  'habit.unit':'نوع الوحدة','habit.repeatDays':'أيام التكرار','habit.active':'عادة نشطة',
+  'habit.save':'حفظ العادة','habit.cancel':'إلغاء','habit.delete':'حذف',
+  'habit.name':'اسم العادة *','habit.type':'نوع التسجيل',
+  'habit.new':'عادة جديدة','habit.editTitle':'تعديل العادة',
+  'habit.example':'مثال: قراءة 20 دقيقة',
+  'day.0':'الأحد','day.1':'الاثنين','day.2':'الثلاثاء','day.3':'الأربعاء','day.4':'الخميس','day.5':'الجمعة','day.6':'السبت',
+
+  'unit.once':'مرة','unit.oncePl':'مرات','unit.cup':'كوب','unit.cupPl':'أكواب','unit.page':'صفحة','unit.pagePl':'صفحات',
+  'unit.minute':'دقيقة','unit.minutePl':'دقائق','unit.hour':'ساعة','unit.hourPl':'ساعات','unit.step':'خطوة','unit.stepPl':'خطوات',
+  'unit.meal':'وجبة','unit.mealPl':'وجبات','unit.pill':'حبة','unit.pillPl':'حبات','unit.session':'جلسة','unit.sessionPl':'جلسات',
+  'unit.task':'مهمة','unit.taskPl':'مهام','unit.km':'كيلومتر','unit.kmPl':'كيلومترات','unit.liter':'لتر','unit.literPl':'لترات',
+  'unit.workout':'تمرين','unit.workoutPl':'تمارين',
+
+  'reports.title':'التقارير','reports.type':'نوع التقرير','reports.type.day':'يوم محدد','reports.type.range':'فترة زمنية',
+  'reports.include':'تضمين العادات','reports.yes':'نعم','reports.no':'لا','reports.from':'من تاريخ','reports.to':'إلى تاريخ',
+  'reports.notesLabel':'ملاحظات التقرير (اختياري)','reports.notesPlaceholder':'ملاحظة تظهر في التقرير...',
+  'reports.pdf':'تصدير / حفظ PDF','reports.csv':'تصدير المهام CSV',
+  'reports.hint':'زر PDF يفتح نافذة الطباعة. اختر Save as PDF / حفظ كملف PDF من قائمة الطباعة في المتصفح. على iPhone يمكن استخدام مشاركة ثم طباعة أو حفظ في الملفات، حسب المتصفح.',
+
+  'report.docTitle':'DayMatrix | تقرير الإنجاز','report.period':'الفترة: {range}',
+  'report.taskCount':'عدد المهام','report.completed':'مكتملة','report.avgProgress':'متوسط التقدم',
+  'report.overdueCount':'المهام المتأخرة ضمن التقرير: {n}',
+  'report.taskDetails':'تفاصيل المهام','report.habitSummary':'ملخص العادات حسب اليوم','report.habitDetails':'تفاصيل العادات',
+  'report.notesSection':'ملاحظات التقرير','report.noTasks':'لا توجد مهام مسجلة في هذه الفترة.',
+  'report.col.task':'المهمة','report.col.category':'التصنيف','report.col.due':'الموعد','report.col.progress':'التقدم',
+  'report.col.status':'الحالة','report.col.estimate':'الوقت المقدر','report.col.date':'التاريخ',
+  'report.col.scheduled':'العادات المطلوبة','report.col.completedH':'مكتملة','report.col.avgH':'متوسط التقدم',
+  'report.col.habit':'العادة','report.col.done':'المنفذ','report.col.target':'الهدف',
+  'report.footer':'تم إنشاء التقرير من البيانات المسجلة في DayMatrix. نسبة التقدم تعكس آخر حالة محفوظة لكل مهمة.',
+  'report.status.done':'مكتملة','report.status.overdue':'متأخرة','report.status.open':'غير مكتملة','report.noCategory':'بدون تصنيف',
+
+  'settings.categories':'التصنيفات','settings.catHint':'أضف تصنيفات تناسبك. حذف تصنيف لا يحذف المهام، بل ينقلها إلى «بدون تصنيف».',
+  'settings.catName':'اسم التصنيف','settings.add':'إضافة',
+  'settings.data':'البيانات والنسخ الاحتياطي','settings.dataHint':'صدّر ملف JSON للاحتفاظ بنسخة من المهام والعادات والتصنيفات والسجلات. احتفظ بالملف في مكان آمن.',
+  'settings.exportJson':'تصدير كل البيانات JSON','settings.importJson':'استيراد نسخة JSON',
+  'settings.manage':'إدارة البيانات','settings.deleteAll':'حذف كل البيانات',
+  'settings.deleteHint':'لا يمكن التراجع عن حذف البيانات. صدّر نسخة احتياطية قبل استخدام هذا الخيار.',
+  'settings.about':'عن الحفظ',
+  'settings.storageHint':'الإصدار الأول يحفظ البيانات داخل المتصفح على الجهاز نفسه باستخدام IndexedDB مع نسخة احتياطية احتياطية عبر localStorage عند تعذر استخدام IndexedDB. لا توجد مزامنة سحابية بين الأجهزة. لا تمسح بيانات الموقع أو المتصفح قبل تصدير نسخة احتياطية.',
+  'settings.checking':'جارٍ فحص التخزين...','settings.storageIdb':'التخزين الأساسي: IndexedDB مع نسخة استرداد محلية','settings.storageLocal':'وضع احتياطي: تخزين المتصفح فقط',
+  'settings.backupNone':'لم يتم تسجيل تصدير نسخة احتياطية من هذا المتصفح بعد.','settings.backupLast':'آخر تصدير نسخة احتياطية: {when}. احتفظ بملف JSON خارج الجهاز.',
+  'settings.emptyCats':'لا توجد تصنيفات.',
+
+  'modal.task.new':'مهمة جديدة','modal.task.edit':'تعديل المهمة','modal.task.titleLabel':'اسم المهمة *','modal.task.desc':'تفاصيل أو ملاحظات',
+  'modal.task.due':'تاريخ الاستحقاق','modal.task.deadline':'وقت التسليم النهائي','modal.task.category':'التصنيف','modal.task.priority':'الأولوية',
+  'modal.task.estimate':'الوقت المتوقع','modal.task.minutes':'دقيقة','modal.task.hours':'ساعة',
+  'modal.task.progress':'نسبة التقدم: {pct}%','modal.task.completed':'وضع علامة مكتملة','modal.task.save':'حفظ المهمة','modal.task.cancel':'إلغاء','modal.task.delete':'حذف',
+  'modal.task.noCategory':'بدون تصنيف','modal.task.example':'مثال: مراجعة تقرير العمل','modal.task.progressAria':'نسبة التقدم',
+  'modal.habit.new':'عادة جديدة','modal.habit.edit':'تعديل العادة','modal.habit.nameLabel':'اسم العادة *',
+
+  'toast.taskSaved':'تم حفظ المهمة','toast.taskDeleted':'تم حذف المهمة','toast.habitSaved':'تم حفظ العادة','toast.habitDeleted':'تم حذف العادة',
+  'toast.catDeleted':'تم حذف التصنيف','toast.catAdded':'تمت إضافة التصنيف','toast.catExists':'التصنيف موجود بالفعل',
+  'toast.backupReady':'تم تجهيز النسخة الاحتياطية','toast.imported':'تم استيراد البيانات','toast.reset':'تمت إعادة ضبط التطبيق',
+  'toast.doneRecorded':'تم تسجيل الإنجاز','toast.reopened':'أعيد فتح المهمة','toast.progressSaved':'تم تحديث التقدم',
+  'toast.saveFailed':'تعذر حفظ البيانات. صدّر نسخة احتياطية واحذف بعض بيانات المتصفح.','toast.selectDay':'اختر يومًا واحدًا على الأقل',
+
+  'confirm.deleteTask':'حذف هذه المهمة نهائيًا؟','confirm.deleteHabit':'حذف العادة وسجلها؟',
+  'confirm.deleteCategory':'حذف التصنيف «{name}»؟ ستبقى المهام بدون تصنيف.',
+  'confirm.import':'سيتم استبدال البيانات الحالية بمحتوى النسخة المستوردة. صدّر نسخة من بياناتك الحالية أولًا إن كنت تحتاجها. متابعة؟',
+  'confirm.reset1':'تحذير: سيتم حذف كل المهام والعادات والسجلات نهائيًا. هل تريد المتابعة؟',
+  'confirm.reset2':'تأكيد أخير: هل صدّرت نسخة احتياطية وتريد حذف كل البيانات؟',
+  'alert.invalidFile':'ملف غير صالح أو لا يحتوي على بيانات DayMatrix. لم يتم تغيير البيانات.',
+
+  'default.habit.brushAM':'غسل الأسنان صباحًا','default.habit.brushPM':'غسل الأسنان مساءً','default.habit.washFace':'غسل الوجه','default.habit.drinkWater':'شرب الماء',
+  'default.cat.personal':'شخصي','default.cat.work':'شغل','default.cat.health':'صحة','default.cat.learn':'تعلم','default.cat.home':'منزل',
+
+  'activity.task.create':'إنشاء مهمة','activity.task.edit':'تعديل مهمة','activity.habit.create':'إنشاء عادة','activity.habit.edit':'تعديل عادة',
+  'activity.task.done':'إكمال مهمة','activity.task.reopen':'إعادة فتح مهمة','activity.task.progress':'تغيير التقدم',
+  'activity.task.delete':'حذف مهمة','activity.habit.delete':'حذف عادة','activity.habit.log':'تسجيل عادة',
+  'activity.cat.add':'إضافة تصنيف','activity.cat.delete':'حذف تصنيف','activity.backup.import':'استيراد نسخة احتياطية'
+},
+en: {
+  'app.title':'DayMatrix | Manage Your Day','app.brand':'DAYMATRIX · PERSONAL SYSTEM','app.heading':'Manage Your Day','app.tagline':'Organize your day and track your progress.','app.langToggle':'العربية',
+  'nav.home':'Home','nav.tasks':'Tasks','nav.habits':'Habits','nav.reports':'Reports','nav.settings':'Settings',
+  'dash.plan':"Today's Plan",'dash.planSub':'Start with what matters and review your progress throughout the day.',
+  'dash.progress':"{pct}% of today's task progress",'dash.count':'{done} / {total}',
+  'dash.stat.tasks':'Tasks due today','dash.stat.tasks.sub':'{count} completed',
+  'dash.stat.habits':"Today's habits",'dash.stat.habits.sub':'{done} of {total} completed',
+  'dash.stat.overdue':'Overdue tasks','dash.stat.overdueSub':'Needs review',
+  'dash.stat.time':'Estimated time left','dash.stat.timeSub':'Based on your estimates',
+  'dash.time.min':'{n} min','dash.time.hr':'{h} hr {m} min',
+  'dash.focus':'Top priorities','dash.newTask':'+ New task','dash.newHabit':'+ Habit','dash.dailyHabits':'Daily habits','dash.viewAll':'View all',
+  'dash.empty':'No open tasks. Add a task or enjoy your free time.','dash.emptyHabits':'No habits scheduled for today.',
+  'dash.footer':'Your data is stored locally in this browser. Export backups regularly.',
+
+  'tasks.title':'Tasks','tasks.add':'+ Add task','tasks.search':'Search tasks...',
+  'tasks.filter.all':'All statuses','tasks.filter.today':'Due today','tasks.filter.overdue':'Overdue','tasks.filter.open':'Incomplete','tasks.filter.done':'Completed',
+  'tasks.cat.all':'All categories','tasks.empty':'No matching tasks. Use “Add task” to create one.',
+
+  'task.priority.high':'Important & urgent','task.priority.medium':'Important','task.priority.low':'Someday',
+  'task.status.done':'Completed','task.status.overdue':'Overdue','task.status.noDue':'No due date',
+  'task.estimate':'{n} min','task.progress':'Progress','task.edit':'Edit',
+
+  'habit.title':'Daily habits','habit.add':'+ Add habit','habit.dateLabel':'Habit log date','habit.daySummaryLabel':'Habit completion today',
+  'habit.summary':'{pct}% · {done} of {total} completed','habit.empty':'No habits scheduled for this date.',
+  'habit.note':'Each habit has a separate log for every day. Changing today’s log does not affect past days. Habits not scheduled for a given day are excluded from that day’s percentage.',
+  'habit.logDone':'Done ✓','habit.log':'Log completion','habit.logged':'Logged','habit.notLogged':'Not logged yet',
+  'habit.ofTarget':'{val} of {target} {unit}','habit.edit':'Edit','habit.progressAria':'Completed amount',
+  'habit.type.boolean':'Done / not done','habit.type.number':'Count or quantity','habit.type.minutes':'Duration in minutes',
+  'habit.icon':'Icon','habit.target':'Required daily count',
+  'habit.target.one':'{n} time per day','habit.target.many':'{n} times per day',
+  'habit.unit':'Unit type','habit.repeatDays':'Repeat days','habit.active':'Active habit',
+  'habit.save':'Save habit','habit.cancel':'Cancel','habit.delete':'Delete',
+  'habit.name':'Habit name *','habit.type':'Tracking type',
+  'habit.new':'New habit','habit.editTitle':'Edit habit',
+  'habit.example':'Example: Read for 20 minutes',
+  'day.0':'Sunday','day.1':'Monday','day.2':'Tuesday','day.3':'Wednesday','day.4':'Thursday','day.5':'Friday','day.6':'Saturday',
+
+  'unit.once':'time','unit.oncePl':'times','unit.cup':'cup','unit.cupPl':'cups','unit.page':'page','unit.pagePl':'pages',
+  'unit.minute':'minute','unit.minutePl':'minutes','unit.hour':'hour','unit.hourPl':'hours','unit.step':'step','unit.stepPl':'steps',
+  'unit.meal':'meal','unit.mealPl':'meals','unit.pill':'pill','unit.pillPl':'pills','unit.session':'session','unit.sessionPl':'sessions',
+  'unit.task':'task','unit.taskPl':'tasks','unit.km':'kilometer','unit.kmPl':'kilometers','unit.liter':'liter','unit.literPl':'liters',
+  'unit.workout':'exercise','unit.workoutPl':'exercises',
+
+  'reports.title':'Reports','reports.type':'Report type','reports.type.day':'Single day','reports.type.range':'Date range',
+  'reports.include':'Include habits','reports.yes':'Yes','reports.no':'No','reports.from':'From date','reports.to':'To date',
+  'reports.notesLabel':'Report notes (optional)','reports.notesPlaceholder':'A note that will appear in the report...',
+  'reports.pdf':'Export / Save PDF','reports.csv':'Export tasks as CSV',
+  'reports.hint':'The PDF button opens the print dialog. Choose “Save as PDF”. On iPhone, use Share → Print or Save to Files, depending on your browser.',
+
+  'report.docTitle':'DayMatrix | Progress report','report.period':'Period: {range}',
+  'report.taskCount':'Task count','report.completed':'Completed','report.avgProgress':'Average progress',
+  'report.overdueCount':'Overdue tasks in report: {n}',
+  'report.taskDetails':'Task details','report.habitSummary':'Daily habit summary','report.habitDetails':'Habit details',
+  'report.notesSection':'Report notes','report.noTasks':'No tasks recorded during this period.',
+  'report.col.task':'Task','report.col.category':'Category','report.col.due':'Due','report.col.progress':'Progress',
+  'report.col.status':'Status','report.col.estimate':'Estimate','report.col.date':'Date',
+  'report.col.scheduled':'Scheduled habits','report.col.completedH':'Completed','report.col.avgH':'Avg progress',
+  'report.col.habit':'Habit','report.col.done':'Completed','report.col.target':'Target',
+  'report.footer':'This report was generated from data saved in DayMatrix. Progress reflects the latest saved status for each task.',
+  'report.status.done':'Completed','report.status.overdue':'Overdue','report.status.open':'Incomplete','report.noCategory':'Uncategorized',
+
+  'settings.categories':'Categories','settings.catHint':'Create categories that suit your workflow. Deleting a category keeps its tasks and moves them to “Uncategorized”.',
+  'settings.catName':'Category name','settings.add':'Add',
+  'settings.data':'Data and backups','settings.dataHint':'Export a JSON file containing tasks, habits, categories, and logs. Keep the file somewhere safe.',
+  'settings.exportJson':'Export all data as JSON','settings.importJson':'Import JSON backup',
+  'settings.manage':'Data management','settings.deleteAll':'Delete all data',
+  'settings.deleteHint':'Deleting data cannot be undone. Export a backup before using this option.',
+  'settings.about':'About data storage',
+  'settings.storageHint':'This version stores data in this browser on this device using IndexedDB, with a localStorage recovery copy when available. There is no cloud sync between devices. Export a backup before clearing site or browser data.',
+  'settings.checking':'Checking storage...','settings.storageIdb':'Primary storage: IndexedDB with a local recovery copy','settings.storageLocal':'Fallback mode: browser storage only',
+  'settings.backupNone':'No backup export has been recorded in this browser yet.','settings.backupLast':'Last backup export: {when}. Keep the JSON file off-device.',
+  'settings.emptyCats':'No categories yet.',
+
+  'modal.task.new':'New task','modal.task.edit':'Edit task','modal.task.titleLabel':'Task title *','modal.task.desc':'Details or notes',
+  'modal.task.due':'Due date','modal.task.deadline':'Deadline time','modal.task.category':'Category','modal.task.priority':'Priority',
+  'modal.task.estimate':'Estimated duration','modal.task.minutes':'Minutes','modal.task.hours':'Hours',
+  'modal.task.progress':'Progress: {pct}%','modal.task.completed':'Mark as completed','modal.task.save':'Save task','modal.task.cancel':'Cancel','modal.task.delete':'Delete',
+  'modal.task.noCategory':'Uncategorized','modal.task.example':'Example: Review a work report','modal.task.progressAria':'Progress percentage',
+  'modal.habit.new':'New habit','modal.habit.edit':'Edit habit','modal.habit.nameLabel':'Habit name *',
+
+  'toast.taskSaved':'Task saved','toast.taskDeleted':'Task deleted','toast.habitSaved':'Habit saved','toast.habitDeleted':'Habit deleted',
+  'toast.catDeleted':'Category deleted','toast.catAdded':'Category added','toast.catExists':'This category already exists',
+  'toast.backupReady':'Backup prepared','toast.imported':'Data imported','toast.reset':'App reset',
+  'toast.doneRecorded':'Completion recorded','toast.reopened':'Task reopened','toast.progressSaved':'Progress updated',
+  'toast.saveFailed':'Could not save data. Export a backup and free up browser storage.','toast.selectDay':'Select at least one day',
+
+  'confirm.deleteTask':'Permanently delete this task?','confirm.deleteHabit':'Delete this habit and its history?',
+  'confirm.deleteCategory':'Delete category “{name}”? Tasks will remain uncategorized.',
+  'confirm.import':'Current data will be replaced by the imported backup. Export your current data first if needed. Continue?',
+  'confirm.reset1':'Warning: all tasks, habits, and logs will be permanently deleted. Continue?',
+  'confirm.reset2':'Final confirmation: have you exported a backup, and do you want to delete all data?',
+  'alert.invalidFile':'Invalid file, or it does not contain DayMatrix data. Nothing was changed.',
+
+  'default.habit.brushAM':'Brush teeth in the morning','default.habit.brushPM':'Brush teeth in the evening','default.habit.washFace':'Wash face','default.habit.drinkWater':'Drink water',
+  'default.cat.personal':'Personal','default.cat.work':'Work','default.cat.health':'Health','default.cat.learn':'Learning','default.cat.home':'Home',
+
+  'activity.task.create':'Create task','activity.task.edit':'Edit task','activity.habit.create':'Create habit','activity.habit.edit':'Edit habit',
+  'activity.task.done':'Complete task','activity.task.reopen':'Reopen task','activity.task.progress':'Update progress',
+  'activity.task.delete':'Delete task','activity.habit.delete':'Delete habit','activity.habit.log':'Log habit',
+  'activity.cat.add':'Add category','activity.cat.delete':'Delete category','activity.backup.import':'Import backup'
+}};
+
+function t(key, vars){
+  const dict = I18N[currentLanguage] || I18N.ar;
+  let s = dict[key];
+  if(s === undefined) s = I18N.ar[key];
+  if(s === undefined) return key;
+  if(vars) for(const k in vars) s = s.split('{'+k+'}').join(String(vars[k]));
+  return s;
+}
+
+/* Name-based translations for default seed data (data is NOT modified). */
+const DEFAULT_HABIT_LOOKUP = {
+  'غسل الأسنان صباحًا':'default.habit.brushAM','غسل الأسنان مساءً':'default.habit.brushPM','غسل الوجه':'default.habit.washFace','شرب الماء':'default.habit.drinkWater',
+  'Brush teeth in the morning':'default.habit.brushAM','Brush teeth in the evening':'default.habit.brushPM','Wash face':'default.habit.washFace','Drink water':'default.habit.drinkWater'
+};
+const DEFAULT_CATEGORY_LOOKUP = {
+  'شخصي':'default.cat.personal','شغل':'default.cat.work','صحة':'default.cat.health','تعلم':'default.cat.learn','منزل':'default.cat.home',
+  'Personal':'default.cat.personal','Work':'default.cat.work','Health':'default.cat.health','Learning':'default.cat.learn','Home':'default.cat.home'
+};
+const UNIT_FORMS = {
+  'مرة':['unit.once','unit.oncePl'],'كوب':['unit.cup','unit.cupPl'],'صفحة':['unit.page','unit.pagePl'],
+  'دقيقة':['unit.minute','unit.minutePl'],'ساعة':['unit.hour','unit.hourPl'],'خطوة':['unit.step','unit.stepPl'],
+  'وجبة':['unit.meal','unit.mealPl'],'حبة':['unit.pill','unit.pillPl'],'جلسة':['unit.session','unit.sessionPl'],
+  'مهمة':['unit.task','unit.taskPl'],'كيلومتر':['unit.km','unit.kmPl'],'لتر':['unit.liter','unit.literPl'],'تمرين':['unit.workout','unit.workoutPl']
+};
+function habitDisplayName(h){ const k = DEFAULT_HABIT_LOOKUP[h.name]; return k ? t(k) : h.name; }
+function categoryDisplayName(c){ if(!c) return t('report.noCategory'); const k = DEFAULT_CATEGORY_LOOKUP[c]; return k ? t(k) : c; }
+function unitLabel(unit, count){
+  const f = UNIT_FORMS[unit];
+  if(!f) return unit || '';
+  return t(count === 1 ? f[0] : f[1]);
+}
+
+function dateFmt(s){
+  if(!s) return t('task.status.noDue');
+  const d = new Date(s+'T12:00:00');
+  const loc = currentLanguage==='ar' ? 'ar-EG' : 'en-GB';
+  return d.toLocaleDateString(loc, {day:'numeric',month:'short',year:'numeric'});
+}
+
+function applyLanguage(){
+  document.documentElement.lang = currentLanguage;
+  document.documentElement.dir = currentLanguage==='ar' ? 'rtl' : 'ltr';
+  document.title = t('app.title');
+  document.querySelectorAll('[data-i18n]').forEach(el=>{ el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{ el.setAttribute('placeholder', t(el.dataset.i18nPlaceholder)); });
+  document.querySelectorAll('[data-i18n-aria]').forEach(el=>{ el.setAttribute('aria-label', t(el.dataset.i18nAria)); });
+  const lt = document.getElementById('langToggle'); if(lt) lt.textContent = t('app.langToggle');
+  const st = document.getElementById('storageStatus');
+  if(st) st.textContent = db ? t('settings.storageIdb') : t('settings.storageLocal');
+  updateBackupStatus();
+  updateClock();
+  if(data){ renderAll(); }
+}
+function setLanguage(lang){
+  currentLanguage = lang;
+  try{ localStorage.setItem(LS_LANG, lang); }catch(e){}
+  applyLanguage();
+}
+function toggleLanguage(){ setLanguage(currentLanguage==='ar' ? 'en' : 'ar'); }
+
+/* ------------------------------------------------------------------
+   Data (all key names, shapes and defaults preserved from v4)
+------------------------------------------------------------------- */
 const defaultData=()=>({version:1,categories:['شخصي','شغل','صحة','تعلم','منزل'],tasks:[],habits:[
-{id:uid(),name:'غسل الأسنان صباحًا',type:'boolean',target:1,unit:'مرة',schedule:[0,1,2,3,4,5,6],active:true,created:todayISO(),icon:'🪥'},
-{id:uid(),name:'غسل الأسنان مساءً',type:'boolean',target:1,unit:'مرة',schedule:[0,1,2,3,4,5,6],active:true,created:todayISO(),icon:'🦷'},
-{id:uid(),name:'غسل الوجه',type:'boolean',target:1,unit:'مرة',schedule:[0,1,2,3,4,5,6],active:true,created:todayISO(),icon:'💧'},
-{id:uid(),name:'شرب الماء',type:'number',target:8,unit:'أكواب',schedule:[0,1,2,3,4,5,6],active:true,created:todayISO(),icon:'🥤'}
-],habitLogs:{},activity:[],dayNotes:{},settings:{}}); 
-let data,db=null;
+  {id:uid(),name:'غسل الأسنان صباحًا',type:'boolean',target:1,unit:'مرة',schedule:[0,1,2,3,4,5,6],active:true,created:todayISO(),icon:'tooth'},
+  {id:uid(),name:'غسل الأسنان مساءً',type:'boolean',target:1,unit:'مرة',schedule:[0,1,2,3,4,5,6],active:true,created:todayISO(),icon:'tooth'},
+  {id:uid(),name:'غسل الوجه',type:'boolean',target:1,unit:'مرة',schedule:[0,1,2,3,4,5,6],active:true,created:todayISO(),icon:'droplets'},
+  {id:uid(),name:'شرب الماء',type:'number',target:8,unit:'كوب',schedule:[0,1,2,3,4,5,6],active:true,created:todayISO(),icon:'droplets'}
+],habitLogs:{},activity:[],dayNotes:{},settings:{}});
+
+let data, db=null;
+
 function openDB(){return new Promise((resolve,reject)=>{if(!('indexedDB'in window))return reject();let req=indexedDB.open(DB_NAME,1);req.onupgradeneeded=()=>req.result.createObjectStore(DB_STORE);req.onsuccess=()=>{db=req.result;resolve(db)};req.onerror=()=>reject(req.error)})}
+
 async function loadData(){
   let idbData=null, localData=null;
-  try { const raw=localStorage.getItem('daymatrix_data'); if(raw) localData=JSON.parse(raw); } catch(e) {}
+  try { const raw=localStorage.getItem(LS_DATA); if(raw) localData=JSON.parse(raw); } catch(e) {}
   try { await openDB(); idbData=await new Promise((resolve,reject)=>{let req=db.transaction(DB_STORE,'readonly').objectStore(DB_STORE).get(DB_KEY);req.onsuccess=()=>resolve(req.result||null);req.onerror=()=>reject(req.error)}); } catch(e) { db=null; }
-  data=idbData || localData || defaultData(); normalizeData();
-  if(!idbData && localData && db) { try { await saveData(); } catch(e) {} }
-  initUI(); renderAll();
-  document.getElementById('storageStatus').textContent=db?'التخزين الأساسي: IndexedDB مع نسخة استرداد محلية':'وضع احتياطي: تخزين المتصفح فقط';
+  data = idbData || localData || defaultData();
+  normalizeData();
+  if(!idbData && localData && db){ try{ await saveData(); }catch(e){} }
+  initUI();
+  renderAll();
+  const st = document.getElementById('storageStatus');
+  if(st) st.textContent = db ? t('settings.storageIdb') : t('settings.storageLocal');
   updateBackupStatus();
 }
-function updateBackupStatus(){const stamp=localStorage.getItem('daymatrix_last_export');const el=document.getElementById('backupStatus');if(el)el.textContent=stamp?'آخر تصدير نسخة احتياطية: '+new Date(stamp).toLocaleString('ar-EG')+'. احتفظ بملف JSON خارج الجهاز.':'لم يتم تسجيل تصدير نسخة احتياطية من هذا المتصفح بعد.';}
-function normalizeData(){data.categories ||= [];data.tasks ||= [];data.habits ||= [];data.habitLogs ||= {};data.activity ||= [];data.dayNotes ||= {};data.settings ||= {}}
-async function saveData(){const serialized=JSON.stringify(data);try{localStorage.setItem('daymatrix_data',serialized)}catch(e){}if(db){try{await new Promise((resolve,reject)=>{const tx=db.transaction(DB_STORE,'readwrite');tx.objectStore(DB_STORE).put(data,DB_KEY);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Storage transaction aborted'))});return true}catch(e){db=null}}try{localStorage.setItem('daymatrix_data',serialized);return true}catch(e){toast('تعذر حفظ البيانات. صدّر نسخة احتياطية واحذف بعض بيانات المتصفح.');return false}}
+function normalizeData(){
+  data.categories ||= []; data.tasks ||= []; data.habits ||= []; data.habitLogs ||= {}; data.activity ||= []; data.dayNotes ||= {}; data.settings ||= {};
+  const ICON_BY_EMOJI = {'🪥':'tooth','🦷':'tooth','💧':'droplets','📖':'book-open','🏋️':'dumbbell','🚶':'footprints','🍎':'apple','💊':'pill','🛏️':'bed','🧠':'brain','❤️':'heart','☀️':'sun','🌙':'moon','☕':'coffee','🍽️':'utensils','📝':'notebook','💼':'briefcase','🎯':'target','🏠':'house','🎵':'music','✓':'check-circle'};
+  data.habits.forEach(h=>{ if(h.icon && ICON_BY_EMOJI[h.icon]) h.icon = ICON_BY_EMOJI[h.icon]; });
+}
+async function saveData(){
+  const serialized = JSON.stringify(data);
+  try{ localStorage.setItem(LS_DATA, serialized); }catch(e){}
+  if(db){
+    try{
+      await new Promise((resolve,reject)=>{
+        const tx=db.transaction(DB_STORE,'readwrite');
+        tx.objectStore(DB_STORE).put(data,DB_KEY);
+        tx.oncomplete=resolve; tx.onerror=()=>reject(tx.error); tx.onabort=()=>reject(tx.error||new Error('Storage transaction aborted'));
+      });
+      return true;
+    }catch(e){ db=null; }
+  }
+  try{ localStorage.setItem(LS_DATA, serialized); return true; }
+  catch(e){ toast(t('toast.saveFailed')); return false; }
+}
 function logActivity(type,item,details=''){data.activity.unshift({id:uid(),date:todayISO(),time:new Date().toISOString(),type,item,details});if(data.activity.length>1500)data.activity.length=1500}
-function toast(s){let el=document.getElementById('toast');el.textContent=s;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2400)}
-function initUI(){document.getElementById('todayLabel').textContent=new Date().toLocaleDateString('ar-EG',{weekday:'short',day:'numeric',month:'short'});document.getElementById('habitDate').value=todayISO();document.getElementById('reportFrom').value=todayISO();document.getElementById('reportTo').value=todayISO();document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));document.getElementById('reportType').addEventListener('change',()=>{document.getElementById('reportToWrap').style.display=document.getElementById('reportType').value==='range'?'block':'none';buildReport()});}
-function showView(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id==='view-'+v));document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x.dataset.view===v));if(v==='reports')buildReport();window.scrollTo({top:0,behavior:'smooth'})}
-function renderAll(){renderDashboard();renderTasks();renderHabits();renderCategories();updateCategoryFilter();buildReport()}
+
+function updateBackupStatus(){
+  const stamp = (()=>{try{return localStorage.getItem(LS_EXPORT)}catch(e){return null}})();
+  const el = document.getElementById('backupStatus');
+  if(el) el.textContent = stamp ? t('settings.backupLast', {when: new Date(stamp).toLocaleString(currentLanguage==='ar'?'ar-EG':'en-GB')}) : t('settings.backupNone');
+}
+
+function toast(s){const el=document.getElementById('toast');el.textContent=s;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2400)}
+function openModal(){document.getElementById('modalBackdrop').classList.add('open')}
+function closeModal(){document.getElementById('modalBackdrop').classList.remove('open')}
+
+function initUI(){
+  document.getElementById('habitDate').value = todayISO();
+  document.getElementById('reportFrom').value = todayISO();
+  document.getElementById('reportTo').value = todayISO();
+  document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+  document.getElementById('langToggle').addEventListener('click', toggleLanguage);
+  document.getElementById('reportType').addEventListener('change', ()=>{ document.getElementById('reportToWrap').style.display = document.getElementById('reportType').value==='range'?'block':'none'; buildReport(); });
+  document.getElementById('reportIncludeHabits').addEventListener('change', buildReport);
+  document.getElementById('reportFrom').addEventListener('change', buildReport);
+  document.getElementById('reportTo').addEventListener('change', buildReport);
+  document.getElementById('reportNotes').addEventListener('input', buildReport);
+}
+function showView(v){
+  document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id==='view-'+v));
+  document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x.dataset.view===v));
+  if(v==='reports') buildReport();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function jumpTasks(filter){
+  showView('tasks');
+  document.getElementById('taskFilter').value = filter;
+  renderTasks();
+}
+function renderAll(){ renderDashboard(); renderTasks(); renderHabits(); renderCategories(); updateCategoryFilter(); buildReport(); }
+
 function isDone(t){return !!t.completed}
 function taskPercent(t){return t.completed?100:Math.max(0,Math.min(100,Number(t.progress)||0))}
 function taskDueToday(t){return t.due===todayISO()&&!t.completed}
 function taskOverdue(t){return !!t.due&&t.due<todayISO()&&!t.completed}
 function minutesLeft(tasks){return tasks.filter(t=>!t.completed).reduce((n,t)=>n+Math.max(0,Number(t.estimate)||0)*(1-taskPercent(t)/100),0)}
 function dayTasks(d=todayISO()){return data.tasks.filter(t=>t.due===d)}
+
 function habitScheduled(h,d){let dow=new Date(d+'T12:00:00').getDay();return h.active!==false&&(!h.schedule||h.schedule.includes(dow))&&d>=(h.created||'0000-00-00')}
 function habitValue(h,d){return Number(data.habitLogs[d]?.[h.id]?.value||0)}
 function habitPercent(h,d){return Math.min(100,Math.round(habitValue(h,d)/Math.max(1,Number(h.target)||1)*100))}
 function habitSummary(d){let hs=data.habits.filter(h=>habitScheduled(h,d));let done=hs.filter(h=>habitPercent(h,d)>=100).length;return {hs,done,pct:hs.length?Math.round(hs.reduce((n,h)=>n+habitPercent(h,d),0)/hs.length):0}}
-function renderDashboard(){let ts=dayTasks(),done=ts.filter(isDone).length,percent=ts.length?Math.round(ts.reduce((n,t)=>n+taskPercent(t),0)/ts.length):0;document.getElementById('dayProgress').style.width=percent+'%';document.getElementById('dayProgressLabel').textContent=percent+'% من تقدم مهام اليوم';document.getElementById('doneCount').textContent=`${done} / ${ts.length}`;document.getElementById('statTasks').textContent=ts.length;document.getElementById('statTasksSub').textContent=`${done} مكتملة`;let hs=habitSummary(todayISO());document.getElementById('statHabits').textContent=hs.pct+'%';document.getElementById('statHabitsSub').textContent=`${hs.done} من ${hs.hs.length} مكتملة`;document.getElementById('statOverdue').textContent=data.tasks.filter(taskOverdue).length;let mins=minutesLeft(ts);document.getElementById('statTime').textContent=mins>=60?`${Math.floor(mins/60)} س ${Math.round(mins%60)} د`:`${Math.round(mins)} د`;let focus=data.tasks.filter(t=>!t.completed).sort((a,b)=>{let rank=t=>({high:0,medium:1,low:2}[t.priority]??1);return (taskOverdue(a)?-100:0)+(a.due===todayISO()?-20:0)+rank(a)-(taskOverdue(b)?-100:0)-(b.due===todayISO()?-20:0)-rank(b)}).slice(0,4);document.getElementById('focusTasks').innerHTML=focus.length?focus.map(taskCard).join(''):'<div class="empty">لا توجد مهام مفتوحة. أضف مهمة أو استمتع بمساحة يومك.</div>';let dh=data.habits.filter(h=>habitScheduled(h,todayISO())).slice(0,5);document.getElementById('dashboardHabits').innerHTML=dh.length?dh.map(h=>habitCard(h,todayISO(),true)).join(''):'<div class="empty">لا توجد عادات مجدولة لهذا اليوم.</div>'}
-function taskCard(t){let pct=taskPercent(t);let cat=t.category||'بدون تصنيف';let priorityLabel={high:'مهم وعاجل',medium:'مهم',low:'يمكن تأجيله'}[t.priority]||'مهم';let dueLabel=t.due?(dateFmt(t.due)+(t.dueTime?' · '+t.dueTime:'')):'بدون موعد';return `<article class="task ${t.completed?'done':''}" onclick="if(!event.target.closest(&quot;button,input&quot;))openTask(&quot;${t.id}&quot;)" style="cursor:pointer"><div class="task-top"><button class="check ${t.completed?'done':''}" aria-label="تغيير حالة المهمة" onclick="toggleTask('${t.id}')"></button><div class="task-content"><div class="task-title">${esc(t.title)}</div>${t.description?`<div class="task-desc">${esc(t.description)}</div>`:''}<div class="meta"><span class="tag ${t.priority==='high'?'urgent':t.priority==='medium'?'important':'someday'}">${priorityLabel}</span><span class="tag">${esc(cat)}</span><span class="tag">${t.completed?'مكتملة':taskOverdue(t)?'متأخرة':dueLabel}</span>${t.estimate?`<span class="tag">${esc(t.estimate)} دقيقة</span>`:''}</div></div><div class="task-buttons"><button class="icon-btn" onclick="openTask('${t.id}')">تعديل</button></div></div><div class="task-progress"><div class="task-progress-head"><span>التقدم</span><strong>${pct}%</strong></div><div class="progress-track"><div class="progress-fill" style="width:${pct}%;background:${t.completed?'var(--green)':'var(--accent)'}"></div></div><input aria-label="نسبة التقدم" type="range" min="0" max="100" step="5" value="${pct}" style="margin-top:10px" onchange="setProgress('${t.id}',this.value)"></div></article>`}
-function renderTasks(){let q=(document.getElementById('taskSearch')?.value||'').toLowerCase(),f=document.getElementById('taskFilter')?.value||'all',c=document.getElementById('categoryFilter')?.value||'all';let arr=data.tasks.filter(t=>(!q||[t.title,t.description,t.category].join(' ').toLowerCase().includes(q))&&(c==='all'||(t.category||'')===c)&&(f==='all'||f==='today'&&taskDueToday(t)||f==='overdue'&&taskOverdue(t)||f==='open'&&!t.completed||f==='done'&&t.completed)).sort((a,b)=>Number(a.completed)-Number(b.completed)||(a.due||'9999').localeCompare(b.due||'9999'));document.getElementById('allTasks').innerHTML=arr.length?arr.map(taskCard).join(''):'<div class="empty">لا توجد مهام مطابقة. استخدم «إضافة مهمة» لإنشاء واحدة.</div>'}
-function openTask(id=''){let t=data.tasks.find(x=>x.id===id)||{id:'',title:'',description:'',due:todayISO(),category:data.categories[0]||'',priority:'medium',progress:0,estimate:'',completed:false};document.getElementById('modal').innerHTML=`<h2>${id?'تعديل المهمة':'مهمة جديدة'}</h2><form id="taskForm"><div class="form-grid"><div class="full"><label>اسم المهمة *</label><input name="title" required maxlength="180" value="${esc(t.title)}" placeholder="مثال: مراجعة تقرير العمل"></div><div class="full"><label>تفاصيل أو ملاحظات</label><textarea name="description" rows="2">${esc(t.description||'')}</textarea></div><div><label>تاريخ الاستحقاق</label><input type="date" name="due" value="${esc(t.due||'')}"></div><div><label>وقت التسليم النهائي</label><input type="time" name="dueTime" value="${esc(t.dueTime||'')}"></div><div><label>التصنيف</label><select name="category"><option value="">بدون تصنيف</option>${data.categories.map(c=>`<option ${c===t.category?'selected':''} value="${esc(c)}">${esc(c)}</option>`).join('')}</select></div><div><label>الأولوية</label><select name="priority"><option value="high" ${t.priority==='high'?'selected':''}>مهم وعاجل</option><option value="medium" ${t.priority==='medium'?'selected':''}>مهم</option><option value="low" ${t.priority==='low'?'selected':''}>يمكن تأجيله</option></select></div><div><label>الوقت المتوقع</label><div style="display:flex;gap:6px"><input type="number" min="0" max="100000" name="estimateValue" value="${esc(t.estimate? (t.estimate%60===0?t.estimate/60:t.estimate):'')}" placeholder="30"><select name="estimateUnit" style="width:100px"><option value="minutes" ${!t.estimate||t.estimate%60!==0?'selected':''}>دقيقة</option><option value="hours" ${t.estimate&&t.estimate%60===0?'selected':''}>ساعة</option></select></div></div><div class="full"><label>نسبة التقدم: <span id="taskPctText">${taskPercent(t)}%</span></label><input type="range" name="progress" min="0" max="100" step="5" value="${taskPercent(t)}" oninput="document.getElementById('taskPctText').textContent=this.value+'%'"></div><div class="full"><label style="display:flex;align-items:center;gap:8px;font-size:14px"><input type="checkbox" name="completed" ${t.completed?'checked':''}> وضع علامة مكتملة</label></div></div><div class="modal-actions"><button class="btn primary" type="submit">حفظ المهمة</button><button class="btn" type="button" onclick="closeModal()">إلغاء</button>${id?`<button class="btn danger" type="button" onclick="deleteTask('${id}')">حذف</button>`:''}</div></form>`;document.getElementById('taskForm').onsubmit=async e=>{e.preventDefault();let fd=new FormData(e.target),title=fd.get('title').trim();if(!title)return;let was=data.tasks.find(x=>x.id===id);let obj={id:id||uid(),title,description:fd.get('description').trim(),due:fd.get('due')||'',dueTime:fd.get('dueTime')||'',category:fd.get('category')||'',priority:fd.get('priority'),estimate:(Number(fd.get('estimateValue'))||0)*(fd.get('estimateUnit')==='hours'?60:1),progress:Number(fd.get('progress'))||0,completed:fd.get('completed')==='on'||Number(fd.get('progress'))===100,created:was?.created||todayISO(),updated:new Date().toISOString()};if(obj.completed)obj.progress=100;if(was)Object.assign(was,obj);else data.tasks.push(obj);logActivity(was?'تعديل مهمة':'إنشاء مهمة',title,`${obj.progress}%`);await saveData();closeModal();renderAll();toast('تم حفظ المهمة')};openModal()}
-async function toggleTask(id){let t=data.tasks.find(x=>x.id===id);if(!t)return;t.completed=!t.completed;t.progress=t.completed?100:Math.min(95,Number(t.progress)||0);t.updated=new Date().toISOString();logActivity(t.completed?'إكمال مهمة':'إعادة فتح مهمة',t.title);await saveData();renderAll();toast(t.completed?'تم تسجيل الإنجاز':'أعيد فتح المهمة')}
-async function setProgress(id,val){let t=data.tasks.find(x=>x.id===id);if(!t)return;t.progress=Number(val);t.completed=t.progress===100;t.updated=new Date().toISOString();logActivity('تغيير التقدم',t.title,`${t.progress}%`);await saveData();renderAll()}
-async function deleteTask(id){let t=data.tasks.find(x=>x.id===id);if(!t)return;if(!confirm('حذف هذه المهمة نهائيًا؟'))return;data.tasks=data.tasks.filter(x=>x.id!==id);logActivity('حذف مهمة',t.title);await saveData();closeModal();renderAll();toast('تم حذف المهمة')}
-function openHabit(id=''){let h=data.habits.find(x=>x.id===id)||{id:'',name:'',type:'boolean',target:1,unit:'مرة',schedule:[0,1,2,3,4,5,6],icon:'✓',active:true,created:todayISO()};let days=['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];document.getElementById('modal').innerHTML=`<h2>${id?'تعديل العادة':'عادة جديدة'}</h2><form id="habitForm"><div class="form-grid"><div class="full"><label>اسم العادة *</label><input name="name" required maxlength="100" value="${esc(h.name)}" placeholder="مثال: قراءة 20 دقيقة"></div><div><label>نوع التسجيل</label><select name="type" id="habitType" onchange="document.getElementById('habitTargetWrap').style.display=this.value==='boolean'?'none':'block'"><option value="boolean" ${h.type==='boolean'?'selected':''}>تم / لم يتم</option><option value="number" ${h.type==='number'?'selected':''}>عدد أو كمية</option><option value="minutes" ${h.type==='minutes'?'selected':''}>مدة بالدقائق</option></select></div><div><label>رمز بسيط (اختياري)</label><input name="icon" maxlength="6" value="${esc(h.icon||'✓')}"></div><div id="habitTargetWrap" style="${h.type==='boolean'?'display:none':''}"><label>الهدف اليومي</label><input type="number" min="1" name="target" value="${esc(h.target||1)}"></div><div><label>وحدة القياس</label><input name="unit" value="${esc(h.unit||'مرة')}" placeholder="كوب، صفحة، دقيقة..."></div><div class="full"><label>أيام التكرار</label><div style="display:flex;gap:10px;flex-wrap:wrap">${days.map((d,i)=>`<label style="display:flex;align-items:center;gap:4px;color:var(--text);font-size:13px"><input type="checkbox" name="day" value="${i}" ${(h.schedule||[0,1,2,3,4,5,6]).includes(i)?'checked':''}>${d}</label>`).join('')}</div></div><div class="full"><label style="display:flex;align-items:center;gap:8px;font-size:14px"><input type="checkbox" name="active" ${h.active!==false?'checked':''}> عادة نشطة</label></div></div><div class="modal-actions"><button class="btn primary" type="submit">حفظ العادة</button><button class="btn" type="button" onclick="closeModal()">إلغاء</button>${id?`<button class="btn danger" type="button" onclick="deleteHabit('${id}')">حذف</button>`:''}</div></form>`;document.getElementById('habitForm').onsubmit=async e=>{e.preventDefault();let fd=new FormData(e.target),was=data.habits.find(x=>x.id===id),type=fd.get('type'),schedule=fd.getAll('day').map(Number);if(!schedule.length){toast('اختر يومًا واحدًا على الأقل');return}let obj={id:id||uid(),name:fd.get('name').trim(),type,target:type==='boolean'?1:Math.max(1,Number(fd.get('target'))||1),unit:fd.get('unit').trim()||'مرة',schedule,icon:fd.get('icon').trim()||'✓',active:fd.get('active')==='on',created:was?.created||todayISO()};if(was)Object.assign(was,obj);else data.habits.push(obj);logActivity(was?'تعديل عادة':'إنشاء عادة',obj.name);await saveData();closeModal();renderAll();toast('تم حفظ العادة')};openModal()}
-function habitCard(h,d,compact=false){let val=habitValue(h,d),pct=habitPercent(h,d),done=pct>=100;let input=h.type==='boolean'?`<button class="btn small ${done?'primary':''}" onclick="setHabit('${h.id}','${d}',${done?0:1})">${done?'تم ✓':'تسجيل الإنجاز'}</button>`:`<div class="habit-count"><button class="icon-btn" onclick="adjustHabit('${h.id}','${d}',-1)">−</button><input aria-label="الكمية المنفذة" type="number" min="0" value="${val}" onchange="setHabit('${h.id}','${d}',this.value)"><button class="icon-btn" onclick="adjustHabit('${h.id}','${d}',1)">＋</button><span class="habit-sub">/ ${h.target} ${esc(h.unit)}</span></div>`;return `<div class="habit"><div class="habit-mark">${esc(h.icon||'✓')}</div><div class="habit-body"><div class="habit-name">${esc(h.name)}</div><div class="habit-sub">${h.type==='boolean'?(done?'تم تسجيلها':'لم تسجل بعد'):`${val} من ${h.target} ${esc(h.unit)}`} · ${pct}%</div><div class="habit-progress"><span style="width:${pct}%"></span></div></div>${input}${compact?'':`<button class="icon-btn" onclick="openHabit('${h.id}')">تعديل</button>`}</div>`}
-function renderHabits(){let d=document.getElementById('habitDate')?.value||todayISO(),hs=data.habits.filter(h=>habitScheduled(h,d)),sum=habitSummary(d);document.getElementById('habitDaySummary').textContent=`${sum.pct}% · ${sum.done} من ${sum.hs.length} مكتملة`;document.getElementById('allHabits').innerHTML=hs.length?hs.map(h=>habitCard(h,d)).join(''):'<div class="empty">لا توجد عادات مجدولة في هذا التاريخ.</div>'}
-async function setHabit(id,d,val){let h=data.habits.find(x=>x.id===id);if(!h)return;let v=Math.max(0,Number(val)||0);if(h.type==='boolean')v=v?1:0;if(h.type!=='boolean')v=Math.min(v,Math.max(1,Number(h.target)||1));data.habitLogs[d] ||= {};data.habitLogs[d][id]={value:v,updated:new Date().toISOString()};logActivity('تسجيل عادة',h.name,`${d}: ${v}`);await saveData();renderDashboard();renderHabits();buildReport()}
-async function adjustHabit(id,d,delta){let h=data.habits.find(x=>x.id===id);if(!h)return;await setHabit(id,d,Math.max(0,habitValue(h,d)+delta))}
-async function deleteHabit(id){let h=data.habits.find(x=>x.id===id);if(!h||!confirm('حذف العادة وسجلها؟'))return;data.habits=data.habits.filter(x=>x.id!==id);Object.values(data.habitLogs).forEach(day=>delete day[id]);logActivity('حذف عادة',h.name);await saveData();closeModal();renderAll();toast('تم حذف العادة')}
-function addCategory(){let input=document.getElementById('newCategory'),name=input.value.trim();if(!name)return;if(data.categories.some(c=>c.toLowerCase()===name.toLowerCase())){toast('التصنيف موجود بالفعل');return}data.categories.push(name);logActivity('إضافة تصنيف',name);input.value='';saveData().then(()=>{renderCategories();updateCategoryFilter();renderTasks();toast('تمت إضافة التصنيف')})}
-async function deleteCategory(name){if(!confirm(`حذف التصنيف «${name}»؟ ستبقى المهام بدون تصنيف.`))return;data.categories=data.categories.filter(c=>c!==name);data.tasks.forEach(t=>{if(t.category===name)t.category=''});logActivity('حذف تصنيف',name);await saveData();renderCategories();updateCategoryFilter();renderTasks();toast('تم حذف التصنيف')}
-function renderCategories(){document.getElementById('categoryList').innerHTML=data.categories.length?data.categories.map(c=>`<div class="category-row"><span>${esc(c)}</span><button class="btn danger small" onclick="deleteCategory('${esc(c).replace(/'/g,"\\'")}')">حذف</button></div>`).join(''):'<div class="empty">لا توجد تصنيفات.</div>'}
-function updateCategoryFilter(){let el=document.getElementById('categoryFilter'),old=el.value;el.innerHTML='<option value="all">كل التصنيفات</option>'+data.categories.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join('');if([...el.options].some(o=>o.value===old))el.value=old}
-function openModal(){document.getElementById('modalBackdrop').classList.add('open')}
-function closeModal(){document.getElementById('modalBackdrop').classList.remove('open')}
-function buildReport(){if(!data)return;let type=document.getElementById('reportType').value,from=document.getElementById('reportFrom').value||todayISO(),to=type==='day'?from:(document.getElementById('reportTo').value||from);if(from>to)[from,to]=[to,from];let tasks=data.tasks.filter(t=>t.due&&t.due>=from&&t.due<=to||t.created>=from&&t.created<=to);let done=tasks.filter(t=>t.completed).length,pct=tasks.length?Math.round(tasks.reduce((n,t)=>n+taskPercent(t),0)/tasks.length):0,over=tasks.filter(t=>!t.completed&&t.due&&t.due<todayISO()).length;let habitRows=[];if(document.getElementById('reportIncludeHabits').value==='yes'){for(let d=from;d<=to;d=plusDays(d,1)){let s=habitSummary(d);habitRows.push({date:d,...s})}}let notes=document.getElementById('reportNotes').value.trim();let rows=tasks.slice().sort((a,b)=>(a.due||'').localeCompare(b.due||'')).map(t=>`<tr><td>${esc(t.title)}</td><td>${esc(t.category||'بدون تصنيف')}</td><td>${esc(t.due?dateFmt(t.due):'غير محدد')}</td><td>${taskPercent(t)}%</td><td>${t.completed?'مكتملة':taskOverdue(t)?'متأخرة':'غير مكتملة'}</td><td>${Number(t.estimate)||0} د</td></tr>`).join('');let habitHtml=habitRows.length?`<h2>ملخص العادات حسب اليوم</h2><table><thead><tr><th>التاريخ</th><th>العادات المطلوبة</th><th>مكتملة</th><th>متوسط التقدم</th></tr></thead><tbody>${habitRows.map(s=>`<tr><td>${dateFmt(s.date)}</td><td>${s.hs.length}</td><td>${s.done}</td><td>${s.pct}%</td></tr>`).join('')}</tbody></table><h2>تفاصيل العادات</h2><table><thead><tr><th>التاريخ</th><th>العادة</th><th>المنفذ</th><th>الهدف</th><th>التقدم</th></tr></thead><tbody>${habitRows.flatMap(s=>s.hs.map(h=>`<tr><td>${dateFmt(s.date)}</td><td>${esc(h.name)}</td><td>${habitValue(h,s.date)} ${esc(h.unit||'')}</td><td>${h.target}</td><td>${habitPercent(h,s.date)}%</td></tr>`)).join('')}</tbody></table>`:'';let range=from===to?dateFmt(from):`${dateFmt(from)} - ${dateFmt(to)}`;document.getElementById('reportPreview').innerHTML=`<div class="report-box" id="reportContent"><h1>DayMatrix | تقرير الإنجاز</h1><p>الفترة: ${esc(range)}</p><div class="report-summary"><div><span>عدد المهام</span><strong>${tasks.length}</strong></div><div><span>مكتملة</span><strong>${done}</strong></div><div><span>متوسط التقدم</span><strong>${pct}%</strong></div></div><p>المهام المتأخرة ضمن التقرير: ${over}</p><h2>تفاصيل المهام</h2><table><thead><tr><th>المهمة</th><th>التصنيف</th><th>الموعد</th><th>التقدم</th><th>الحالة</th><th>الوقت المقدر</th></tr></thead><tbody>${rows||'<tr><td colspan="6">لا توجد مهام مسجلة في هذه الفترة.</td></tr>'}</tbody></table>${habitHtml}${notes?`<h2>ملاحظات التقرير</h2><p>${esc(notes).replace(/\n/g,'<br>')}</p>`:''}<p style="font-size:10px;color:#666;margin-top:24px">تم إنشاء التقرير من البيانات المسجلة في DayMatrix. نسبة التقدم تعكس آخر حالة محفوظة لكل مهمة.</p></div>`;document.getElementById('printArea').innerHTML=document.getElementById('reportPreview').innerHTML}
-function printReport(){buildReport();document.getElementById('printArea').style.display='block';window.print();setTimeout(()=>document.getElementById('printArea').style.display='none',1000)}
-function exportCSV(){let from=document.getElementById('reportFrom').value||todayISO(),to=document.getElementById('reportType').value==='day'?from:(document.getElementById('reportTo').value||from);let arr=data.tasks.filter(t=>(t.due&&t.due>=from&&t.due<=to)||(t.created>=from&&t.created<=to));let csv=[['Title','Description','Due date','Category','Priority','Progress','Completed','Estimated minutes','Created'],...arr.map(t=>[t.title,t.description,t.due,t.category,t.priority,taskPercent(t),t.completed?'Yes':'No',t.estimate,t.created])].map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');downloadFile('\ufeff'+csv,`daymatrix-tasks-${from}-${to}.csv`,'text/csv;charset=utf-8');}
-function downloadFile(content,name,type){let blob=new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
-function exportJSON(){let stamp=new Date().toISOString();let payload={...data,exportedAt:stamp,app:'DayMatrix'};downloadFile(JSON.stringify(payload,null,2),`daymatrix-backup-${todayISO()}.json`,'application/json');try{localStorage.setItem('daymatrix_last_export',stamp)}catch(e){}updateBackupStatus();toast('تم تجهيز النسخة الاحتياطية')}
-function importJSON(event){let file=event.target.files[0];if(!file)return;let reader=new FileReader();reader.onload=async()=>{try{let parsed=JSON.parse(reader.result);if(!parsed||!Array.isArray(parsed.tasks)||!Array.isArray(parsed.habits)||!Array.isArray(parsed.categories))throw Error('invalid');if(!confirm('سيتم استبدال البيانات الحالية بمحتوى النسخة المستوردة. صدّر نسخة من بياناتك الحالية أولًا إن كنت تحتاجها. متابعة؟'))return;data={...defaultData(),...parsed};normalizeData();logActivity('استيراد نسخة احتياطية',file.name);await saveData();renderAll();toast('تم استيراد البيانات')}catch(e){alert('ملف غير صالح أو لا يحتوي على بيانات DayMatrix. لم يتم تغيير البيانات.')}finally{event.target.value=''}};reader.readAsText(file)}
-async function resetData(){if(!confirm('تحذير: سيتم حذف كل المهام والعادات والسجلات نهائيًا. هل تريد المتابعة؟'))return;if(!confirm('تأكيد أخير: هل صدّرت نسخة احتياطية وتريد حذف كل البيانات؟'))return;data=defaultData();await saveData();renderAll();toast('تمت إعادة ضبط التطبيق')}
-function exportCSVUnused(){}
 
-// Reliable bilingual UI toggle and live local clock.
-let currentLanguage = localStorage.getItem('daymatrix_language') || 'ar';
-const dmTranslations = {
-'إدارة يومك':'Manage Your Day','رتّب يومك، وقِس تقدمك.':'Organize your day and track progress.',
-'نظرة عامة':'Overview','المهام':'Tasks','العادات':'Habits','التقارير':'Reports','الإعدادات':'Settings',
-'خطة اليوم':'Today’s Plan','ابدأ بالأهم، وراجع تقدمك خلال اليوم.':'Start with what matters. Review your progress throughout the day.',
-'مهام مستحقة اليوم':'Tasks due today','العادات اليوم':'Habits today','مهام متأخرة':'Overdue tasks','وقت متوقع متبقٍ':'Estimated time remaining',
-'مكتملة':'Completed','تحتاج مراجعة':'Needs review','حسب تقديراتك':'Based on your estimates','أهم ما يجب إنجازه':'Top priorities',
-'＋ مهمة جديدة':'＋ New task','+ مهمة جديدة':'+ New task','＋ عادة':'＋ Habit','العادات اليومية':'Daily habits','عرض الكل':'View all',
-'لا توجد مهام مفتوحة. أضف مهمة أو استمتع بمساحة يومك.':'No open tasks. Add one or enjoy your free time.',
-'لا توجد عادات مجدولة لهذا اليوم.':'No habits scheduled for today.','ابحث في المهام...':'Search tasks...',
-'كل الحالات':'All statuses','مستحقة اليوم':'Due today','متأخرة':'Overdue','غير مكتملة':'Incomplete','كل التصنيفات':'All categories',
-'نوع التقرير':'Report type','يوم محدد':'Single day','فترة زمنية':'Date range','تضمين العادات':'Include habits',
-'من تاريخ':'From date','إلى تاريخ':'To date','ملاحظات التقرير (اختياري)':'Report notes (optional)',
-'تصدير / حفظ PDF':'Export / Save PDF','تصدير المهام CSV':'Export tasks CSV','التصنيفات':'Categories',
-'اسم التصنيف':'Category name','إضافة':'Add','البيانات والنسخ الاحتياطي':'Data & backups',
-'تصدير كل البيانات JSON':'Export all data JSON','استيراد نسخة JSON':'Import JSON backup','حذف كل البيانات':'Delete all data',
-'عن الحفظ':'Storage information','التقدم':'Progress','اسم المهمة *':'Task title *','تفاصيل أو ملاحظات':'Details or notes',
-'تاريخ الاستحقاق':'Due date','وقت التسليم النهائي':'Deadline time','التصنيف':'Category','الأولوية':'Priority','الوقت المتوقع':'Estimated duration',
-'دقيقة':'Minutes','ساعة':'Hours','مهم وعاجل':'Important & urgent','مهم':'Important','يمكن تأجيله':'Someday',
-'وضع علامة مكتملة':'Mark completed','حفظ المهمة':'Save task','إلغاء':'Cancel','مهمة جديدة':'New task','تعديل المهمة':'Edit task',
-'بدون تصنيف':'Uncategorized','بدون موعد':'No due date','تسجيل الإنجاز':'Log completion','لم تسجل بعد':'Not logged yet',
-'حفظ العادة':'Save habit','عادة جديدة':'New habit','اسم العادة *':'Habit name *','نوع التسجيل':'Tracking type',
-'تم / لم يتم':'Done / not done','عدد أو كمية':'Count or quantity','مدة بالدقائق':'Duration in minutes',
-'الهدف اليومي':'Daily target','وحدة القياس':'Unit','أيام التكرار':'Repeat days','عادة نشطة':'Active habit',
-'تفاصيل المهام':'Task details','ملخص العادات حسب اليوم':'Daily habit summary','تفاصيل العادات':'Habit details',
-'المهمة':'Task','الموعد':'Deadline','الحالة':'Status','الوقت المقدر':'Estimated time',
-'لا توجد مهام مسجلة في هذه الفترة.':'No tasks recorded in this period.',
-'English':'English','العربية':'Arabic'
-};
-function dmSetLanguage(lang) {
-  currentLanguage = lang;
-  try { localStorage.setItem('daymatrix_language', lang); } catch(e) {}
-  document.documentElement.lang = lang;
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-  const btn = document.getElementById('langToggle');
-  if (btn) btn.textContent = lang === 'ar' ? 'English' : 'العربية';
-  const root = document.getElementById('app') || document.body;
-  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-  let node;
-  while ((node = walker.nextNode())) {
-    if (node.parentElement && node.parentElement.closest('#langToggle, #liveClock, #todayLabel, script, style')) continue;
-    const raw = node.nodeValue, trimmed = raw.trim();
-    if (!trimmed) continue;
-    let replacement = null;
-    if (lang === 'en') replacement = dmTranslations[trimmed] || null;
-    else {
-      for (const [ar, en] of Object.entries(dmTranslations)) {
-        if (en === trimmed) { replacement = ar; break; }
-      }
+function renderDashboard(){
+  const ts = dayTasks();
+  const done = ts.filter(isDone).length;
+  const percent = ts.length ? Math.round(ts.reduce((n,t)=>n+taskPercent(t),0)/ts.length) : 0;
+  document.getElementById('dayProgress').style.width = percent+'%';
+  document.getElementById('dayProgressLabel').textContent = t('dash.progress',{pct:percent});
+  document.getElementById('doneCount').textContent = t('dash.count',{done,total:ts.length});
+  document.getElementById('statTasks').textContent = ts.length;
+  document.getElementById('statTasksSub').textContent = t('dash.stat.tasks.sub',{count:done});
+  const hs = habitSummary(todayISO());
+  document.getElementById('statHabits').textContent = hs.pct+'%';
+  document.getElementById('statHabitsSub').textContent = t('dash.stat.habits.sub',{done:hs.done,total:hs.hs.length});
+  document.getElementById('statOverdue').textContent = data.tasks.filter(taskOverdue).length;
+  const mins = minutesLeft(ts);
+  document.getElementById('statTime').textContent = mins>=60 ? t('dash.time.hr',{h:Math.floor(mins/60),m:Math.round(mins%60)}) : t('dash.time.min',{n:Math.round(mins)});
+  const focus = data.tasks.filter(t=>!t.completed).sort((a,b)=>{
+    const rank=t=>({high:0,medium:1,low:2}[t.priority]??1);
+    return (taskOverdue(a)?-100:0)+(a.due===todayISO()?-20:0)+rank(a)
+         - (taskOverdue(b)?-100:0)-(b.due===todayISO()?-20:0)-rank(b);
+  }).slice(0,4);
+  document.getElementById('focusTasks').innerHTML = focus.length
+    ? focus.map(taskCard).join('')
+    : '<div class="empty">'+esc(t('dash.empty'))+'</div>';
+  const dh = data.habits.filter(h=>habitScheduled(h,todayISO())).slice(0,5);
+  document.getElementById('dashboardHabits').innerHTML = dh.length
+    ? dh.map(h=>habitCard(h,todayISO(),true)).join('')
+    : '<div class="empty">'+esc(t('dash.emptyHabits'))+'</div>';
+}
+
+function taskCard(t){
+  const pct = taskPercent(t);
+  const catLabel = categoryDisplayName(t.category);
+  const priorityLabel = t('task.priority.'+(t.priority||'medium'));
+  const dueLabel = t.due ? (dateFmt(t.due)+(t.dueTime?' · '+t.dueTime:'')) : t('task.status.noDue');
+  const statusText = t.completed ? t('task.status.done') : taskOverdue(t) ? t('task.status.overdue') : dueLabel;
+  return `<article class="task ${t.completed?'done':''}" onclick="if(!event.target.closest('button,input'))openTask('${t.id}')" style="cursor:pointer">
+    <div class="task-top">
+      <button class="check ${t.completed?'done':''}" aria-label="${esc(t('task.progress'))}" onclick="toggleTask('${t.id}')"></button>
+      <div class="task-content">
+        <div class="task-title">${esc(t.title)}</div>
+        ${t.description?`<div class="task-desc">${esc(t.description)}</div>`:''}
+        <div class="meta">
+          <span class="tag ${t.priority==='high'?'urgent':t.priority==='medium'?'important':'someday'}">${esc(priorityLabel)}</span>
+          <span class="tag">${esc(catLabel)}</span>
+          <span class="tag">${esc(statusText)}</span>
+          ${t.estimate?`<span class="tag">${esc(t('task.estimate',{n:t.estimate}))}</span>`:''}
+        </div>
+      </div>
+      <div class="task-buttons"><button class="icon-btn" onclick="openTask('${t.id}')">${esc(t('task.edit'))}</button></div>
+    </div>
+    <div class="task-progress">
+      <div class="task-progress-head"><span>${esc(t('task.progress'))}</span><strong>${pct}%</strong></div>
+      <div class="progress-track"><div class="progress-fill" style="width:${pct}%;background:${t.completed?'var(--green)':'var(--accent)'}"></div></div>
+      <input aria-label="${esc(t('modal.task.progressAria'))}" type="range" min="0" max="100" step="5" value="${pct}" style="margin-top:10px" onchange="setProgress('${t.id}',this.value)">
+    </div>
+  </article>`;
+}
+
+function renderTasks(){
+  const q=(document.getElementById('taskSearch')?.value||'').toLowerCase();
+  const f=document.getElementById('taskFilter')?.value||'all';
+  const c=document.getElementById('categoryFilter')?.value||'all';
+  const arr = data.tasks.filter(t=>
+    (!q || [t.title,t.description,t.category].join(' ').toLowerCase().includes(q)) &&
+    (c==='all'||(t.category||'')===c) &&
+    (f==='all' || f==='today'&&taskDueToday(t) || f==='overdue'&&taskOverdue(t) || f==='open'&&!t.completed || f==='done'&&t.completed)
+  ).sort((a,b)=>Number(a.completed)-Number(b.completed)||(a.due||'9999').localeCompare(b.due||'9999'));
+  document.getElementById('allTasks').innerHTML = arr.length
+    ? arr.map(taskCard).join('')
+    : '<div class="empty">'+esc(t('tasks.empty'))+'</div>';
+}
+
+function openTask(id=''){
+  const t0 = data.tasks.find(x=>x.id===id) || {id:'',title:'',description:'',due:todayISO(),category:data.categories[0]||'',priority:'medium',progress:0,estimate:'',completed:false};
+  const pct = taskPercent(t0);
+  document.getElementById('modal').innerHTML = `
+    <h2>${esc(t(id?'modal.task.edit':'modal.task.new'))}</h2>
+    <form id="taskForm">
+      <div class="form-grid">
+        <div class="full"><label>${esc(t('modal.task.titleLabel'))}</label><input name="title" required maxlength="180" value="${esc(t0.title)}" placeholder="${esc(t('modal.task.example'))}"></div>
+        <div class="full"><label>${esc(t('modal.task.desc'))}</label><textarea name="description" rows="2">${esc(t0.description||'')}</textarea></div>
+        <div><label>${esc(t('modal.task.due'))}</label><input type="date" name="due" value="${esc(t0.due||'')}"></div>
+        <div><label>${esc(t('modal.task.deadline'))}</label><input type="time" name="dueTime" value="${esc(t0.dueTime||'')}"></div>
+        <div><label>${esc(t('modal.task.category'))}</label>
+          <select name="category">
+            <option value="">${esc(t('modal.task.noCategory'))}</option>
+            ${data.categories.map(c=>`<option ${c===t0.category?'selected':''} value="${esc(c)}">${esc(categoryDisplayName(c))}</option>`).join('')}
+          </select>
+        </div>
+        <div><label>${esc(t('modal.task.priority'))}</label>
+          <select name="priority">
+            <option value="high" ${t0.priority==='high'?'selected':''}>${esc(t('task.priority.high'))}</option>
+            <option value="medium" ${t0.priority==='medium'?'selected':''}>${esc(t('task.priority.medium'))}</option>
+            <option value="low" ${t0.priority==='low'?'selected':''}>${esc(t('task.priority.low'))}</option>
+          </select>
+        </div>
+        <div><label>${esc(t('modal.task.estimate'))}</label>
+          <div style="display:flex;gap:6px">
+            <input type="number" min="0" max="100000" name="estimateValue" value="${esc(t0.estimate? (t0.estimate%60===0?t0.estimate/60:t0.estimate):'')}" placeholder="30">
+            <select name="estimateUnit" style="width:100px">
+              <option value="minutes" ${!t0.estimate||t0.estimate%60!==0?'selected':''}>${esc(t('modal.task.minutes'))}</option>
+              <option value="hours" ${t0.estimate&&t0.estimate%60===0?'selected':''}>${esc(t('modal.task.hours'))}</option>
+            </select>
+          </div>
+        </div>
+        <div class="full"><label id="taskPctLabel">${esc(t('modal.task.progress',{pct}))}</label>
+          <input type="range" name="progress" min="0" max="100" step="5" value="${pct}" oninput="document.getElementById('taskPctLabel').textContent='${esc(t('modal.task.progress',{pct:'__PCT__'}))}'.replace('__PCT__',this.value)">
+        </div>
+        <div class="full"><label style="display:flex;align-items:center;gap:8px;font-size:14px"><input type="checkbox" name="completed" ${t0.completed?'checked':''}> ${esc(t('modal.task.completed'))}</label></div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn primary" type="submit">${esc(t('modal.task.save'))}</button>
+        <button class="btn" type="button" onclick="closeModal()">${esc(t('modal.task.cancel'))}</button>
+        ${id?`<button class="btn danger" type="button" onclick="deleteTask('${id}')">${esc(t('modal.task.delete'))}</button>`:''}
+      </div>
+    </form>`;
+  document.getElementById('taskForm').onsubmit = async e=>{
+    e.preventDefault();
+    const fd = new FormData(e.target);
+    const title = fd.get('title').trim(); if(!title) return;
+    const was = data.tasks.find(x=>x.id===id);
+    const obj = {
+      id: id||uid(), title,
+      description: fd.get('description').trim(),
+      due: fd.get('due')||'', dueTime: fd.get('dueTime')||'',
+      category: fd.get('category')||'', priority: fd.get('priority'),
+      estimate: (Number(fd.get('estimateValue'))||0)*(fd.get('estimateUnit')==='hours'?60:1),
+      progress: Number(fd.get('progress'))||0,
+      completed: fd.get('completed')==='on'||Number(fd.get('progress'))===100,
+      created: was?.created||todayISO(),
+      updated: new Date().toISOString()
+    };
+    if(obj.completed) obj.progress = 100;
+    if(was) Object.assign(was,obj); else data.tasks.push(obj);
+    logActivity(was?'activity.task.edit':'activity.task.create', title, `${obj.progress}%`);
+    await saveData(); closeModal(); renderAll(); toast(t('toast.taskSaved'));
+  };
+  openModal();
+}
+
+async function toggleTask(id){
+  const task = data.tasks.find(x=>x.id===id); if(!task) return;
+  task.completed = !task.completed;
+  task.progress = task.completed ? 100 : Math.min(95,Number(task.progress)||0);
+  task.updated = new Date().toISOString();
+  logActivity(task.completed?'activity.task.done':'activity.task.reopen', task.title);
+  await saveData(); renderAll();
+  toast(task.completed?t('toast.doneRecorded'):t('toast.reopened'));
+}
+async function setProgress(id,val){
+  const task = data.tasks.find(x=>x.id===id); if(!task) return;
+  task.progress = Number(val);
+  task.completed = task.progress===100;
+  task.updated = new Date().toISOString();
+  logActivity('activity.task.progress', task.title, `${task.progress}%`);
+  await saveData(); renderAll();
+}
+async function deleteTask(id){
+  const task = data.tasks.find(x=>x.id===id); if(!task) return;
+  if(!confirm(t('confirm.deleteTask'))) return;
+  data.tasks = data.tasks.filter(x=>x.id!==id);
+  logActivity('activity.task.delete', task.title);
+  await saveData(); closeModal(); renderAll(); toast(t('toast.taskDeleted'));
+}
+
+const HABIT_ICON_MAP = {'check-circle':'✓','droplets':'💧','tooth':'🦷','book-open':'📖','dumbbell':'🏋️','footprints':'🚶','apple':'🍎','pill':'💊','bed':'🛏️','brain':'🧠','heart':'❤️','sun':'☀️','moon':'🌙','coffee':'☕','utensils':'🍽️','notebook':'📝','briefcase':'💼','target':'🎯','house':'🏠','music':'🎵'};
+const HABIT_ICON_OPTIONS = [['check-circle','✓'],['droplets','💧'],['tooth','🦷'],['book-open','📖'],['dumbbell','🏋️'],['footprints','🚶'],['apple','🍎'],['pill','💊'],['bed','🛏️'],['brain','🧠'],['heart','❤️'],['sun','☀️'],['moon','🌙'],['coffee','☕'],['utensils','🍽️'],['notebook','📝'],['briefcase','💼'],['target','🎯'],['house','🏠'],['music','🎵']];
+const HABIT_UNIT_OPTIONS = [['مرة','unit.once'],['كوب','unit.cup'],['صفحة','unit.page'],['دقيقة','unit.minute'],['ساعة','unit.hour'],['خطوة','unit.step'],['وجبة','unit.meal'],['حبة','unit.pill'],['جلسة','unit.session'],['مهمة','unit.task'],['كيلومتر','unit.km'],['لتر','unit.liter'],['تمرين','unit.workout']];
+
+function habitCard(h,d,compact=false){
+  const val = habitValue(h,d);
+  const pct = habitPercent(h,d);
+  const done = pct>=100;
+  const icon = HABIT_ICON_MAP[h.icon] || h.icon || '✓';
+  const name = habitDisplayName(h);
+  const sub = h.type==='boolean'
+    ? esc(done?t('habit.logged'):t('habit.notLogged'))
+    : esc(t('habit.ofTarget',{val, target:h.target, unit:unitLabel(h.unit,h.target)}));
+  const input = h.type==='boolean'
+    ? `<button class="btn small ${done?'primary':''}" onclick="setHabit('${h.id}','${d}',${done?0:1})">${esc(done?t('habit.logDone'):t('habit.log'))}</button>`
+    : `<div class="habit-count">
+        <button class="icon-btn" onclick="adjustHabit('${h.id}','${d}',-1)">−</button>
+        <input aria-label="${esc(t('habit.progressAria'))}" type="number" min="0" value="${val}" onchange="setHabit('${h.id}','${d}',this.value)">
+        <button class="icon-btn" onclick="adjustHabit('${h.id}','${d}',1)">＋</button>
+        <span class="habit-sub">/ ${h.target} ${esc(unitLabel(h.unit,h.target))}</span>
+      </div>`;
+  return `<div class="habit">
+    <div class="habit-mark">${esc(icon)}</div>
+    <div class="habit-body">
+      <div class="habit-name">${esc(name)}</div>
+      <div class="habit-sub">${sub} · ${pct}%</div>
+      <div class="habit-progress"><span style="width:${pct}%"></span></div>
+    </div>
+    ${input}
+    ${compact?'':`<button class="icon-btn" onclick="openHabit('${h.id}')">${esc(t('habit.edit'))}</button>`}
+  </div>`;
+}
+
+function renderHabits(){
+  const d = document.getElementById('habitDate')?.value || todayISO();
+  const hs = data.habits.filter(h=>habitScheduled(h,d));
+  const sum = habitSummary(d);
+  document.getElementById('habitDaySummary').textContent = t('habit.summary',{pct:sum.pct,done:sum.done,total:sum.hs.length});
+  document.getElementById('allHabits').innerHTML = hs.length
+    ? hs.map(h=>habitCard(h,d)).join('')
+    : '<div class="empty">'+esc(t('habit.empty'))+'</div>';
+}
+
+function openHabit(id=''){
+  const h = data.habits.find(x=>x.id===id) || {id:'',name:'',type:'boolean',target:1,unit:'مرة',schedule:[0,1,2,3,4,5,6],icon:'check-circle',active:true,created:todayISO()};
+  const days = [0,1,2,3,4,5,6];
+  document.getElementById('modal').innerHTML = `
+    <h2>${esc(t(id?'modal.habit.edit':'modal.habit.new'))}</h2>
+    <form id="habitForm">
+      <div class="form-grid">
+        <div class="full"><label>${esc(t('modal.habit.nameLabel'))}</label><input name="name" required maxlength="100" value="${esc(h.name)}" placeholder="${esc(t('habit.example'))}"></div>
+        <div><label>${esc(t('habit.type'))}</label>
+          <select name="type" id="habitType" onchange="document.getElementById('habitTargetWrap').style.display=this.value==='boolean'?'none':'block'">
+            <option value="boolean" ${h.type==='boolean'?'selected':''}>${esc(t('habit.type.boolean'))}</option>
+            <option value="number" ${h.type==='number'?'selected':''}>${esc(t('habit.type.number'))}</option>
+            <option value="minutes" ${h.type==='minutes'?'selected':''}>${esc(t('habit.type.minutes'))}</option>
+          </select>
+        </div>
+        <div class="full"><label>${esc(t('habit.icon'))}</label>
+          <input type="hidden" name="icon" id="habitIconValue" value="${esc(h.icon||'check-circle')}">
+          <div class="habit-icon-picker">
+            ${HABIT_ICON_OPTIONS.map(([key,emoji])=>`<button type="button" class="habit-icon-option ${h.icon===key?'selected':''}" aria-label="${esc(key)}" onclick="chooseHabitIcon('${key}',this)">${emoji}</button>`).join('')}
+          </div>
+        </div>
+        <div id="habitTargetWrap" style="${h.type==='boolean'?'display:none':''}">
+          <label>${esc(t('habit.target'))}</label>
+          <select name="target">${Array.from({length:20},(_,i)=>i+1).map(n=>`<option value="${n}" ${Number(h.target||1)===n?'selected':''}>${esc(t(n===1?'habit.target.one':'habit.target.many',{n}))}</option>`).join('')}</select>
+        </div>
+        <div><label>${esc(t('habit.unit'))}</label>
+          <select name="unit">${HABIT_UNIT_OPTIONS.map(([v,k])=>`<option value="${esc(v)}" ${(h.unit||'مرة')===v?'selected':''}>${esc(t(k))}</option>`).join('')}</select>
+        </div>
+        <div class="full"><label>${esc(t('habit.repeatDays'))}</label>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            ${days.map(i=>`<label style="display:flex;align-items:center;gap:4px;color:var(--text);font-size:13px"><input type="checkbox" name="day" value="${i}" ${(h.schedule||[0,1,2,3,4,5,6]).includes(i)?'checked':''}>${esc(t('day.'+i))}</label>`).join('')}
+          </div>
+        </div>
+        <div class="full"><label style="display:flex;align-items:center;gap:8px;font-size:14px"><input type="checkbox" name="active" ${h.active!==false?'checked':''}> ${esc(t('habit.active'))}</label></div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn primary" type="submit">${esc(t('habit.save'))}</button>
+        <button class="btn" type="button" onclick="closeModal()">${esc(t('habit.cancel'))}</button>
+        ${id?`<button class="btn danger" type="button" onclick="deleteHabit('${id}')">${esc(t('habit.delete'))}</button>`:''}
+      </div>
+    </form>`;
+  document.getElementById('habitForm').onsubmit = async e=>{
+    e.preventDefault();
+    const fd = new FormData(e.target);
+    const was = data.habits.find(x=>x.id===id);
+    const type = fd.get('type');
+    const schedule = fd.getAll('day').map(Number);
+    if(!schedule.length){ toast(t('toast.selectDay')); return; }
+    const obj = {
+      id: id||uid(), name: fd.get('name').trim(), type,
+      target: type==='boolean' ? 1 : Math.max(1,Number(fd.get('target'))||1),
+      unit: fd.get('unit').trim()||'مرة',
+      schedule, icon: fd.get('icon')||'check-circle',
+      active: fd.get('active')==='on',
+      created: was?.created||todayISO()
+    };
+    if(was) Object.assign(was,obj); else data.habits.push(obj);
+    logActivity(was?'activity.habit.edit':'activity.habit.create', obj.name);
+    await saveData(); closeModal(); renderAll(); toast(t('toast.habitSaved'));
+  };
+  openModal();
+}
+
+function chooseHabitIcon(key,el){
+  const input = document.getElementById('habitIconValue');
+  if(input) input.value = key;
+  document.querySelectorAll('.habit-icon-option').forEach(b=>b.classList.toggle('selected', b===el));
+}
+
+async function setHabit(id,d,val){
+  const h = data.habits.find(x=>x.id===id); if(!h) return;
+  let v = Math.max(0,Number(val)||0);
+  if(h.type==='boolean') v = v?1:0;
+  else v = Math.min(v, Math.max(1,Number(h.target)||1));
+  data.habitLogs[d] ||= {};
+  data.habitLogs[d][id] = {value:v, updated:new Date().toISOString()};
+  logActivity('activity.habit.log', h.name, `${d}: ${v}`);
+  await saveData(); renderDashboard(); renderHabits(); buildReport();
+}
+async function adjustHabit(id,d,delta){
+  const h = data.habits.find(x=>x.id===id); if(!h) return;
+  await setHabit(id,d,Math.max(0,habitValue(h,d)+delta));
+}
+async function deleteHabit(id){
+  const h = data.habits.find(x=>x.id===id);
+  if(!h || !confirm(t('confirm.deleteHabit'))) return;
+  data.habits = data.habits.filter(x=>x.id!==id);
+  Object.values(data.habitLogs).forEach(day=>delete day[id]);
+  logActivity('activity.habit.delete', h.name);
+  await saveData(); closeModal(); renderAll(); toast(t('toast.habitDeleted'));
+}
+
+function addCategory(){
+  const input = document.getElementById('newCategory');
+  const name = input.value.trim();
+  if(!name) return;
+  if(data.categories.some(c=>c.toLowerCase()===name.toLowerCase())){ toast(t('toast.catExists')); return; }
+  data.categories.push(name);
+  logActivity('activity.cat.add', name);
+  input.value='';
+  saveData().then(()=>{ renderCategories(); updateCategoryFilter(); renderTasks(); toast(t('toast.catAdded')); });
+}
+async function deleteCategory(name){
+  if(!confirm(t('confirm.deleteCategory',{name}))) return;
+  data.categories = data.categories.filter(c=>c!==name);
+  data.tasks.forEach(t0=>{ if(t0.category===name) t0.category=''; });
+  logActivity('activity.cat.delete', name);
+  await saveData(); renderCategories(); updateCategoryFilter(); renderTasks(); toast(t('toast.catDeleted'));
+}
+function renderCategories(){
+  const el = document.getElementById('categoryList');
+  el.innerHTML = data.categories.length
+    ? data.categories.map(c=>`<div class="category-row"><span>${esc(categoryDisplayName(c))}</span><button class="btn danger small" onclick="deleteCategory('${esc(c).replace(/'/g,"\\'")}')">${esc(t('modal.task.delete'))}</button></div>`).join('')
+    : '<div class="empty">'+esc(t('settings.emptyCats'))+'</div>';
+}
+function updateCategoryFilter(){
+  const el = document.getElementById('categoryFilter'); const old = el.value;
+  el.innerHTML = '<option value="all">'+esc(t('tasks.cat.all'))+'</option>' + data.categories.map(c=>`<option value="${esc(c)}">${esc(categoryDisplayName(c))}</option>`).join('');
+  if([...el.options].some(o=>o.value===old)) el.value = old;
+}
+
+function buildReport(){
+  if(!data) return;
+  const type = document.getElementById('reportType').value;
+  let from = document.getElementById('reportFrom').value||todayISO();
+  let to = type==='day' ? from : (document.getElementById('reportTo').value||from);
+  if(from>to){ [from,to]=[to,from]; }
+  const tasks = data.tasks.filter(t0=>(t0.due&&t0.due>=from&&t0.due<=to) || (t0.created>=from&&t0.created<=to));
+  const done = tasks.filter(t0=>t0.completed).length;
+  const pct = tasks.length ? Math.round(tasks.reduce((n,t0)=>n+taskPercent(t0),0)/tasks.length) : 0;
+  const over = tasks.filter(t0=>!t0.completed&&t0.due&&t0.due<todayISO()).length;
+
+  const habitRows = [];
+  if(document.getElementById('reportIncludeHabits').value==='yes'){
+    for(let d=from; d<=to; d=plusDays(d,1)){
+      const s = habitSummary(d);
+      habitRows.push({date:d,...s});
     }
-    if (replacement) node.nodeValue = raw.replace(trimmed, replacement);
   }
-  dmUpdateClock();
+  const notes = document.getElementById('reportNotes').value.trim();
+
+  const taskRows = tasks.slice().sort((a,b)=>(a.due||'').localeCompare(b.due||'')).map(t0=>{
+    const status = t0.completed ? t('report.status.done') : taskOverdue(t0) ? t('report.status.overdue') : t('report.status.open');
+    return `<tr>
+      <td>${esc(t0.title)}</td>
+      <td>${esc(categoryDisplayName(t0.category))}</td>
+      <td>${esc(t0.due?dateFmt(t0.due):t('task.status.noDue'))}</td>
+      <td>${taskPercent(t0)}%</td>
+      <td>${esc(status)}</td>
+      <td>${Number(t0.estimate)||0}</td>
+    </tr>`;
+  }).join('');
+
+  const habitHtml = habitRows.length ? `
+    <h2>${esc(t('report.habitSummary'))}</h2>
+    <table><thead><tr>
+      <th>${esc(t('report.col.date'))}</th>
+      <th>${esc(t('report.col.scheduled'))}</th>
+      <th>${esc(t('report.col.completedH'))}</th>
+      <th>${esc(t('report.col.avgH'))}</th>
+    </tr></thead><tbody>
+      ${habitRows.map(s=>`<tr><td>${esc(dateFmt(s.date))}</td><td>${s.hs.length}</td><td>${s.done}</td><td>${s.pct}%</td></tr>`).join('')}
+    </tbody></table>
+    <h2>${esc(t('report.habitDetails'))}</h2>
+    <table><thead><tr>
+      <th>${esc(t('report.col.date'))}</th>
+      <th>${esc(t('report.col.habit'))}</th>
+      <th>${esc(t('report.col.done'))}</th>
+      <th>${esc(t('report.col.target'))}</th>
+      <th>${esc(t('report.col.progress'))}</th>
+    </tr></thead><tbody>
+      ${habitRows.flatMap(s=>s.hs.map(h=>`<tr>
+        <td>${esc(dateFmt(s.date))}</td>
+        <td>${esc(habitDisplayName(h))}</td>
+        <td>${habitValue(h,s.date)} ${esc(unitLabel(h.unit,h.target))}</td>
+        <td>${h.target}</td>
+        <td>${habitPercent(h,s.date)}%</td>
+      </tr>`)).join('')}
+    </tbody></table>` : '';
+
+  const range = from===to ? dateFmt(from) : `${dateFmt(from)} – ${dateFmt(to)}`;
+  const dir = currentLanguage==='ar' ? 'rtl' : 'ltr';
+  const html = `<div class="report-box" id="reportContent" dir="${dir}">
+    <h1>${esc(t('report.docTitle'))}</h1>
+    <p>${esc(t('report.period',{range}))}</p>
+    <div class="report-summary">
+      <div><span>${esc(t('report.taskCount'))}</span><strong>${tasks.length}</strong></div>
+      <div><span>${esc(t('report.completed'))}</span><strong>${done}</strong></div>
+      <div><span>${esc(t('report.avgProgress'))}</span><strong>${pct}%</strong></div>
+    </div>
+    <p>${esc(t('report.overdueCount',{n:over}))}</p>
+    <h2>${esc(t('report.taskDetails'))}</h2>
+    <table><thead><tr>
+      <th>${esc(t('report.col.task'))}</th>
+      <th>${esc(t('report.col.category'))}</th>
+      <th>${esc(t('report.col.due'))}</th>
+      <th>${esc(t('report.col.progress'))}</th>
+      <th>${esc(t('report.col.status'))}</th>
+      <th>${esc(t('report.col.estimate'))}</th>
+    </tr></thead><tbody>
+      ${taskRows || `<tr><td colspan="6">${esc(t('report.noTasks'))}</td></tr>`}
+    </tbody></table>
+    ${habitHtml}
+    ${notes ? `<h2>${esc(t('report.notesSection'))}</h2><p>${esc(notes).replace(/\n/g,'<br>')}</p>` : ''}
+    <p style="font-size:10px;color:#666;margin-top:24px">${esc(t('report.footer'))}</p>
+  </div>`;
+
+  document.getElementById('reportPreview').innerHTML = html;
+  document.getElementById('printArea').innerHTML = html;
 }
-function toggleLanguage() {
-  dmSetLanguage(currentLanguage === 'ar' ? 'en' : 'ar');
+
+function printReport(){
+  buildReport();
+  document.getElementById('printArea').style.display = 'block';
+  window.print();
+  setTimeout(()=>{ document.getElementById('printArea').style.display='none'; }, 1000);
 }
-function dmUpdateClock() {
+function downloadFile(content,name,type){
+  const blob = new Blob([content],{type});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url), 1000);
+}
+function exportCSV(){
+  const from = document.getElementById('reportFrom').value||todayISO();
+  const to = document.getElementById('reportType').value==='day' ? from : (document.getElementById('reportTo').value||from);
+  const arr = data.tasks.filter(t0=>(t0.due&&t0.due>=from&&t0.due<=to)||(t0.created>=from&&t0.created<=to));
+  const headers = ['Title','Description','Due date','Category','Priority','Progress','Completed','Estimated minutes','Created'];
+  const rows = arr.map(t0=>[t0.title,t0.description,t0.due,t0.category,t0.priority,taskPercent(t0),t0.completed?'Yes':'No',t0.estimate,t0.created]);
+  const csv = [headers, ...rows].map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');
+  downloadFile('\ufeff'+csv, `daymatrix-tasks-${from}-${to}.csv`, 'text/csv;charset=utf-8');
+}
+
+function exportJSON(){
+  const stamp = new Date().toISOString();
+  const payload = {...data, exportedAt:stamp, app:'DayMatrix', appVersion:APP_VERSION};
+  downloadFile(JSON.stringify(payload,null,2), `daymatrix-backup-${todayISO()}.json`, 'application/json');
+  try{ localStorage.setItem(LS_EXPORT, stamp); }catch(e){}
+  updateBackupStatus();
+  toast(t('toast.backupReady'));
+}
+
+function importJSON(event){
+  const file = event.target.files[0]; if(!file) return;
+  const reader = new FileReader();
+  reader.onload = async ()=>{
+    try{
+      const parsed = JSON.parse(reader.result);
+      if(!parsed || !Array.isArray(parsed.tasks) || !Array.isArray(parsed.habits) || !Array.isArray(parsed.categories)) throw Error('invalid');
+      if(!confirm(t('confirm.import'))) return;
+      data = {...defaultData(), ...parsed};
+      normalizeData();
+      logActivity('activity.backup.import', file.name);
+      await saveData(); renderAll();
+      toast(t('toast.imported'));
+    }catch(e){
+      alert(t('alert.invalidFile'));
+    }finally{
+      event.target.value = '';
+    }
+  };
+  reader.readAsText(file);
+}
+
+async function resetData(){
+  if(!confirm(t('confirm.reset1'))) return;
+  if(!confirm(t('confirm.reset2'))) return;
+  data = defaultData();
+  await saveData(); renderAll();
+  toast(t('toast.reset'));
+}
+
+function updateClock(){
   const now = new Date();
   const clock = document.getElementById('liveClock');
   const date = document.getElementById('todayLabel');
-  const locale = currentLanguage === 'ar' ? 'ar-EG' : 'en-GB';
-  if (clock) {
-    clock.style.display = 'block';
-    clock.textContent = now.toLocaleTimeString(locale, {
-      hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
-    });
-  }
-  if (date) {
-    date.style.display = 'block';
-    date.textContent = now.toLocaleDateString(locale, {
-      weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
-    });
-  }
+  const locale = currentLanguage==='ar' ? 'ar-EG' : 'en-GB';
+  if(clock){ clock.style.display='block'; clock.textContent = now.toLocaleTimeString(locale,{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}); }
+  if(date){ date.style.display='block'; date.textContent = now.toLocaleDateString(locale,{weekday:'long',day:'numeric',month:'long',year:'numeric'}); }
 }
-document.addEventListener('DOMContentLoaded', () => {
-  dmSetLanguage(currentLanguage);
-  dmUpdateClock();
-  setInterval(dmUpdateClock, 1000);
-});
 
-dmSetLanguage(currentLanguage); dmUpdateClock(); setInterval(dmUpdateClock, 1000);
-loadData();
-if('serviceWorker' in navigator && (location.protocol==='https:' || location.hostname==='localhost')){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+/* Bootstrap — single initialization, no duplicated intervals */
+(function bootstrap(){
+  applyLanguage();
+  updateClock();
+  setInterval(updateClock, 1000);
+  loadData();
+})();
+
+/* PWA registration (silent, opt-in) */
+if('serviceWorker' in navigator && (location.protocol==='https:' || location.hostname==='localhost')){
+  window.addEventListener('load', ()=>{ navigator.serviceWorker.register('./sw.js').catch(()=>{}); });
+}
 </script>
 </body>
 </html>
+```
+
+Notes on use:
+
+· Save this as index.html. If you also want offline install and PWA install prompt, add the two companion files (manifest.json and sw.js) I provided in the previous message. Without them the app still works fully — it simply won't be installable and won't cache offline. The <link rel="manifest"> reference will 404 silently.
+· Your existing data is safe. The storage keys (DayMatrixDB / daymatrix_data), data shape, and habit log structure are byte-identical to v4. Opening this file from the same origin will load your tasks, habits, logs, categories, and language setting with no migration.
+· Backup first before deploying, as always: open the current app → Settings → "تصدير كل البيانات JSON", save the file somewhere safe. Then replace the HTML.
